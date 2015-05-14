@@ -1,0 +1,1565 @@
+/************************Content Manager Styles****************************************************************************************/
+.Header {
+	
+	COLOR: #333333;
+	font-weight:bold;
+	display:block;
+	font-size:1.8em;
+	line-height:1.3em;
+	/*scala font is required for navigation and headers*/
+	font-family:scala, times new roman,serif;
+	
+}
+
+
+.SubHeader {
+    color:#333333;
+    font-weight:bold;
+	display:block;
+	font-size:1.3em;
+	/*sub headers to use arial font*/
+	font-family: Arial, times new roman, sans-serif;
+}
+
+
+.bodyContent{font-size:1em;color:#333333;}
+.bodyContentSmall{font-size:0.9em;color:#333333;}
+.bodyContentMedium{font-size:1.2em;color:#333333;}
+
+.bottomBorder{border-bottom:3px solid #67bb49;}
+
+
+
+/* SR 4621  - Fix for superscript and subscript elements */
+sup{
+	vertical-align: baseline;	/*Sets the vertical alignment of the sup element to that of it's parent*/
+    	position: relative; 		/*Allow relative positioning*/
+    	bottom: 0.30em;			/*Move the sup element up by approx. one third of a line*/
+}
+
+sub{
+	vertical-align: baseline;	/*Sets the vertical alignment of the sub element to that of it's parent*/
+    	position: relative;		/*Allow relative positioning*/
+    	bottom: -0.30em;		/*Move the sub element down by approx. one third of a line*/
+}
+
+/*Fix for Netscapte and Firefox browsers*/
+a sub{
+	vertical-align: baseline;	/*Sets the vertical alignment of the sub element to that of it's parent*/
+    	position: relative;		/*Allow relative positioning*/
+    	bottom: -0.20em;		/*Move the sub element down by one quarter of a line*/
+	
+}
+/* End SR 4621 */
+
+.alphaList{
+    list-style-type: lower-alpha; 
+    
+}
+    
+.numericList{
+    list-style-type: decimal; 
+}
+
+.headerSuperscript{
+	font-size: 9px;
+	vertical-align: baseline;
+	position: relative;
+	left: -3px;
+	top: -8px	
+}
+/************************ end Content Manager Styles****************************************************************************************/
+
+/************************ Print Preview Styles      ****************************************************************************************/
+
+.printerFriendly .page{width:auto;margin-left:100px;}
+.printerFriendly .footer{width:auto;}
+.printerFriendly .topMenu {display:block;position:absolute;top:12px;right:12px;}
+.printerFriendly .topMenu a{display:none;}
+.printerFriendly .topMenu a.printFriendly,
+	.printerFriendly .topMenu a.print{display:inline-block;}
+.printerFriendly .mainMenu{display:none;}
+.printerFriendly .quickLinksSection{display:none;}
+.printerFriendly .footer .footerItem{display:none;}
+.printerFriendly .footer .footerItem:first-child{display:block;}/*copyright*/
+.printerFriendly .parentpagePanelContent{width:644px;}
+.printerFriendly #companyLogo{display:none;}
+
+/************************ End of Print Preview Styles **************************************************************************************/
+
+
+html, body{height: 100%;}
+/*Opera Fix*/
+body:before {
+    content:"";
+    float:left;
+    width:0;
+    margin-top:-32767px;/
+}
+
+body
+{
+	COLOR: #333333; 
+    font-size: 12px;
+    line-height:1.3em;
+    /*arial font required for all other content types*/
+    font-family: Arial, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:#ffffff;
+}
+.page{
+	width:966px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:0px;
+    margin-bottom:0px;
+    padding:0px 10px 0px 11px;
+	background-color:transparent;
+    min-height: 100%;
+	zoom:normal;
+	-webkit-transform:scale(1);
+}
+.pageHead{padding-top:0px;}
+.headIcons{height:26px;padding:10px 0px 12px 0px;text-align:right;}
+.headIcons a{border:none;text-decoration:none;margin-left:8px;}
+.headIcons a img{border:none;text-decoration:none;}
+
+#logo
+{
+    height:40px;
+    width:420px;
+    vertical-align:top;
+    cursor:pointer; 
+    margin-top:0px;margin-bottom:20px;/*spacing as per ddpa guidelines .. */
+}
+#companyLogo{
+	display:block;float:right;width:250px;height:50px;
+	vertical-align:bottom;
+}
+
+a:link
+{
+    text-decoration:underline;
+    /**as per ddpa style guide*/
+    COLOR: #51447A;
+}
+a:visited
+{
+    text-decoration:underline;
+    COLOR: #51447A;
+}
+a:hover
+{
+    text-decoration:underline;
+    COLOR: #51447A;
+}
+a:active
+{
+    text-decoration:underline;
+    COLOR: #51447A;
+}
+a.linkButton{
+	text-decoration:none;
+	color:#fff;
+	background-color:#51447A;
+	padding:0px 12px 0px 12px;
+	font-size:1.3em;
+	font-family:arial, verdana, sans-serif;
+	line-height:30px;
+	cursor:pointer;
+	display:inline-block;
+}
+/*sr 13283*/
+.buttonTable{
+	width:100%;
+	
+}
+
+.buttonTable > tbody > tr > td{
+	/* width =total space 644/4 - allocate even space top each cell*/
+	width:161px;
+}
+
+.buttonTable .rightPos{
+	text-align:right;
+}
+
+
+
+a.linkButtonBlue{
+	
+	text-decoration:none;
+	color:#fff;
+	/*R145  G204  B218*/
+	background-color:#91CCDA;
+	padding:0px 12px 0px 12px;
+	font-size:1.3em;
+	font-family:arial, verdana, sans-serif;
+	line-height:30px;
+	cursor:pointer;
+	display:inline-block;
+	width:100px;
+	text-align:center;
+}
+
+.IndivFamilyPlansDeltaDental{
+	width:300px;
+	height:453px;
+	float:left;
+	background:transparent url('/content/images/individualfamily/individual_family_dd_bg.jpg') no-repeat top left;
+}
+.IndivFamilyPlansDeltaDental img {border:0px}
+
+.IndivFamilyPlansAAA{
+	width:300px;
+	height:453px;
+	float:right;
+	background:transparent url('/content/images/individualfamily/individual_family_bcbs_bg.jpg') no-repeat top left;
+	margin-right:20px;
+}
+
+.IndivFamilyPlansAAA img {border:0px}
+
+
+
+
+/*end sr 13282*/
+
+
+b{font-weight:bold;}
+
+.mainBody{
+	min-height:300px;
+	padding-bottom:30px;
+}
+
+.footer{
+	clear:both;display:block;
+	width:966px;font-size:0.9em;
+	height:22px;margin:0px auto 0px auto;
+	position:relative;margin-top:-22px;
+}
+
+.footer .footerItem{padding-right:30px;float:left;}
+.footer .footerItem a{text-decoration:underline;}
+
+/********************* menu styles ***********************************************************************************************/
+
+
+/* main menu */
+.mainMenu{
+	float:none;min-height:47px;position:static;
+	display:block;padding-bottom:6px;margin-bottom:15px;
+	font-family: Scala, "Times New Roman", Georgia, serif;
+	background:transparent url(/images/menu_ds.png) repeat-x bottom left;
+	vertical-align:bottom;
+}
+
+.uOfMWelcome .mainMenu{width:607px;font-size:11px;}
+
+
+.mainMenu .menuItem{
+	display:block;float:left;margin:0px;position:relative;
+	border:1px solid #e0e0df;border-left:none;
+}
+.ie7 .mainMenu .menuItem{z-index:10;position:static;}
+.mainMenu .menuItem:first-child{border-left:1px solid #dfdfdf;}
+.mainMenu > .menuItem a{width:96px;}
+.mainMenu .menuItem a{
+	display:table-cell;height:35px;text-decoration:none;font-size:1.2em;
+	border:1px solid #fff;padding:4px;line-height:1em;text-align:center;
+	background:transparent url(/images/menu_item_bg_r.png) repeat-x top left;
+	vertical-align:middle;color:#000;position:relative;
+}
+/* Firefox */
+@-moz-document url-prefix()
+{
+	.mainMenu .menuItem a{height:42px;}
+}
+/* Target Firefox 1.5 and newer [!] */
+.mainMenu .menuItem a, x:-moz-any-link, x:only-child { height:35px; }
+/* Target Firefox 1.5 */
+body:empty .mainMenu .menuItem a {height:42px;}
+/* Opera */
+doesnotexist:-o-prefocus, .mainMenu .menuItem a{height:42px;}
+
+.ie7 .mainMenu .menuItem a{display:block;z-index:10;height:35px;}
+.ie8 .mainMenu > .menuItem:first-child a{width:98px;}
+.mainMenu > .menuItem:nth-child(4) a{width:98px;}
+.mainMenu .menuItem a:hover,
+	.mainMenu a.hover,
+	.mainMenu .menuItem.selected a{
+	background-image:url(/images/menu_item_bg.png);
+}
+.mainMenu .menuItem .subMenu{
+	position:absolute;z-index:1000;
+	border:1px solid #dfdfdf;display:none;
+	width:204px;
+}
+.ie7 .mainMenu .menuItem.lastItem{position:relative;}
+
+.mainMenu .menuItem .subMenu .menuItem{
+	background:#fff none;border:none;float:none;
+}
+.mainMenu .menuItem .subMenu .menuItem a{
+	background-color:#fff;border:none;text-align:left;line-height:1.2em;
+	background-image:none;
+	padding:6px 12px 6px 12px;font-family:arial, sans-serif;font-size:1.1em;
+	min-width:180px;height:auto;max-width:300px;display:block;
+}
+.mainMenu .menuItem .subMenu .menuItem a.arrow{
+	background-image:url(/images/menu_item_arrow.png);
+	background-repeat:no-repeat;
+	background-position:90% 50%;
+}
+.mainMenu .menuItem .subMenu .menuItem a.hover,
+	.mainMenu .menuItem .subMenu .menuItem a:hover{background-color:#67BB49;color:#fff;}
+.mainMenu .menuItem .subMenu .menuItem a.arrow.hover,
+	.mainMenu .menuItem .subMenu .menuItem a.arrow:hover
+	{background-image:url(/images/menu_item_arrow_r.png);}
+.mainMenu .menuItem .subMenu .menuItem .subMenu{
+	left:190px;top:0px;
+}
+.ie7 .mainMenu .menuItem .subMenu .menuItem .subMenu{top:auto;margin-top:-28px;}
+/* main menu for landing pages */
+.andersenLanding .mainMenu{width:545px;}
+.ie7 .andersenLanding .mainMenu{width:564px;}
+.andersenLanding .mainMenu .menuItem a{width:130px;}
+.andersenLanding  #companyLogo{
+	background:transparent url(/images/assoc_logo/andersen.png) no-repeat center right;
+	width:275px;
+}
+
+
+/*  top menu  */
+.topMenu{float:right;width:auto;display:block;font-size:0.9em;text-align:right;}
+.topMenu a{
+	cursor:pointer;color:#51447a;text-decoration:underline;
+	display:block;padding-left:20px;line-height:1.2em;padding-top:1px;
+	display:inline-block;vertical-align:top;min-height:20px;
+	margin-left:3px;
+}
+.topMenu a.pageZoom{
+	width:50px;text-align:left;
+}
+.topMenu a.increase{background:#fff url(/images/topmenu_icon_increase.png) no-repeat top left;}
+.topMenu a.decrease{background:#fff url(/images/topmenu_icon_decrease.png) no-repeat top left;}
+.topMenu a.increase.disabled{background-image:url(/images/topmenu_icon_increase_disabled.png);color:#b9b9b9;}
+.topMenu a.decrease.disabled{background-image:url(/images/topmenu_icon_decrease_disabled.png);color:#b9b9b9;}
+.topMenu a.home{background:#fff url(/images/topmenu_icon_home.png) no-repeat 0px -2px;}
+.topMenu a.sitemap{background:#fff url(/images/topmenu_icon_sitemap.png) no-repeat 0px -2px;}
+.topMenu a.printFriendly{background:#fff url(/images/topmenu_icon_print.png) no-repeat 0px -2px;}
+.topMenu a.print{display:none;}
+
+/* quick links section */
+.quickLinksSection{
+	width:275px;
+	border:1px solid #dfdfdf;
+	float:right;
+}
+.quickLinksSection > div{
+	height:42px;border: 1px solid #e4e4e4;border-bottom-color:#b9b9b9;
+	font-family:Scala, "Times New Roman", Georgia, serif;font-size:1.3em;
+	background:transparent url(/images/quicklinks_item_bg.png) repeat-x top left;
+}
+.quickLinksSection .quicklinksHead{
+	font-weight:bold;font-size:1.5em;
+	line-height:42px;padding:0px 12px 0px 20px;
+	background:transparent url(/images/menu_item_bg.png) repeat-x top left;
+}
+.quickLinksSection > div > a{
+	color: #000;line-height:42px;padding:0px 12px 0px 50px;display:block;
+	font-family:Scala, "Times New Roman", Georgia, serif;
+	text-decoration:none;
+}
+.quickLinksSection .quicklinksLogin{
+	font-weight:bold;font-size:1.5em;
+	line-height:42px;padding:0px 12px 0px 0px;
+	background:#f9f9f9 url(/images/quicklinks_login_bg.png) repeat-x top left;
+	height:auto;padding-bottom:3px;
+}
+.quickLinksSection .quicklinksLogin > div{
+	padding-left:50px;font-size:0.9em;font-weight:normal;line-height:normal;
+}
+.quickLinksSection .quicklinksLogin > div:first-child{
+	background:transparent url(/images/webIcons/lock.png) no-repeat 4px -1px;
+	line-height:42px;height:35px;
+}
+.quickLinksSection .quicklinksLogin > div > a{
+	color:#fff;background-color:#51447a;text-decoration:none;display:block;padding:2px 6px 3px 6px;
+	height:auto;margin-bottom:5px;font-family:arial, verdana, sans-serif;font-size:0.8em;
+	width:156px;
+}
+.quickLinksSection .quicklinksLogin > div > div {margin-bottom:12px;}
+.quickLinksSection .quicklinksLogin > div > div > a{
+	font-size:0.8em;font-family:arial, verdana, sans-serif;padding-left:12px;
+}
+.quickLinksSection  > div.findDentist > a{
+	background:transparent url(/images/webIcons/magnifying_glass.png) no-repeat 4px -1px;
+	
+	
+}
+.quickLinksSection  > div.contactUs > a{
+	background:transparent url(/images/webIcons/phone.png) no-repeat 4px -1px;
+}
+.quickLinksSection  > div.whatsNew > a{
+	background:transparent url(/images/webIcons/thumbs_up.png) no-repeat 5px -2px;
+}
+
+/************ Home Page **************************************************************************************/
+.HomePage .mainBody .parentPageContent .parentpage_topleft{height:322px;width:644px;overflow:hidden;background-color:#f9f9f9;}
+.HomePage .mainBody .parentPageContent .parentpage_topleft img{display:none;}
+.HomePage .mainBody .parentPageContent .parentpage_topleft a > img{border:none;}
+.HomePage .mainBody .parentPageContent .parentpage_topleft img:first-child{display:block;}
+
+/************ Parent Page, e.g. Home, About Us ***************************************************************/
+
+.parentpage_topleft{width:644px;}
+.parentpage_topleft a > img{border:none;}
+.parentpagePanelContent{clear:both;width:966px;margin-top:12px;margin-bottom:20px;min-height:100px;}
+
+.parentPageContent .parentpage_topleft img{margin-top:0px;margin-left:0px;margin-bottom:5px;}
+/*(312*3)+15*2(spacing)=966*/
+.parentpagePanelContent .panel{
+	height:auto;width:293px;display:inline-block;vertical-align:top;position:relative;
+	min-height:100px;
+}
+.ie7 .parentpagePanelContent .panel{display:inline;}
+.parentpagePanelContent .panel a.linkButton{float:right;}
+.parentpagePanelContent .panel a.linkButton{float:right;}
+
+
+.parentpagePanelContent .panel1,
+	.parentpagePanelContent .panel2{margin-right:40px;}
+.parentpagePanelContent .panel .Header{
+	font-size:1.5em;line-height:1.1em;border-bottom:3px solid #67BB49;
+	margin-bottom:4px;display:block;padding-bottom:10px;padding-top:6px;
+}
+.parentpagePanelContent .panel .Header > span{max-width:245px;display:inline-block;}
+.parentpagePanelContent .panel .Header .headerIcon{
+	display:inline-block;width:42px;height:35px;position:relative;top:7px;
+}
+.ie7 .parentpagePanelContent .panel .Header .headerIcon{display:inline;top:6px;}
+
+.parentpagePanelContent .panel .bodyContent{font-size:1.1em;line-height:1.2em;display:block;min-height:40px;}
+/*sr 10062 - left align bullets in parent sections*/
+.parentpagePanelContent .panel ul{text-align:left;padding:0px;margin:0px;padding-left:12px;}
+.parentpagePanelContent .panel ol{text-align:left;padding:0px;margin:0px;padding-left:12px;}
+.ie7 .parentpagePanelContent .panel ul{padding-left:15px;}
+.ie7 .parentpagePanelContent .panel ol{padding-left:15px;}
+
+/* home page panel layout */
+.home .panel .bodyContent{min-height:80px;}
+.home .panel2 .Header{margin-bottom:0px;}
+.home .panel2 .linkButton{position:relative;top:-30px;}
+.ie7 .home .panel2 .linkButton{position:relative;top:-33px;}
+
+
+/* home page panel icons */
+.home .panel1 .Header .headerIcon{background-image:url(/content/images/icons/homepage/panel1icon.png);}
+.home .panel2 .Header .headerIcon{background-image:url(/content/images/icons/homepage/panel2icon.png);}
+.home .panel3 .Header .headerIcon{background-image:url(/content/images/icons/homepage/panel3icon.png);}
+/* subscribers and members icons */
+.SubscribersMembers .panel1 .Header .headerIcon{background-image:url(/content/images/icons/subscribersmembers/panel1icon.png);}
+.SubscribersMembers .panel1 {width:313px;margin-right:30px;}
+.SubscribersMembers .panel2 .Header .headerIcon{background-image:url(/content/images/icons/subscribersmembers/panel2icon.png);}
+.SubscribersMembers .panel2 {margin-right:30px;}
+.SubscribersMembers .panel3 .Header .headerIcon{background-image:url(/content/images/icons/subscribersmembers/panel3icon.png);}
+
+/* employers icons */
+.Employers .panel1 .Header .headerIcon{background-image:url(/content/images/icons/employers/panel1icon.png);}
+.Employers .panel1 {width:313px;margin-right:30px;}
+.Employers .panel2 .Header .headerIcon{background-image:url(/content/images/icons/employers/panel2icon.png);}
+.Employers .panel2 {margin-right:30px;}
+/*not correct img for panel 3*/
+.Employers .panel3 .Header .headerIcon{background-image:url(/content/images/icons/employers/panel3icon.png);}
+
+
+/* individual icons */
+.IndividualFamily .panel1 .Header .headerIcon{background-image:url(/content/images/icons/individualfamily/panel1icon.png);}
+.IndividualFamily .panel1 {width:313px;margin-right:30px;}
+.IndividualFamily .panel2 .Header .headerIcon{background-image:url(/content/images/icons/individualfamily/panel2icon.png);}
+.IndividualFamily .panel2 {margin-right:30px;}
+.IndividualFamily .panel3 .Header .headerIcon{background-image:url(/content/images/icons/individualfamily/panel3icon.png);}
+
+
+/* about us icons */
+.AboutUs .panel1 .Header .headerIcon{background-image:url(/content/images/icons/aboutus/panel1icon.png);}
+.AboutUs .panel1 {width:313px;margin-right:30px;}
+.AboutUs .panel2 .Header .headerIcon{background-image:url(/content/images/icons/aboutus/panel2icon.png);}
+.AboutUs .panel2 {margin-right:30px;}
+.AboutUs .panel3 .Header .headerIcon{background-image:url(/content/images/icons/aboutus/panel3icon.png);}
+
+/* brokersConsultants icons */
+.BrokersConsultants .panel1 .Header .headerIcon{background-image:url(/content/images/icons/brokersconsultants/panel1icon.png);}
+.BrokersConsultants .panel1 {width:313px;margin-right:30px;}
+.BrokersConsultants .panel2 .Header .headerIcon{background-image:url(/content/images/icons/brokersconsultants/panel2icon.png);}
+.BrokersConsultants .panel2 {margin-right:30px;}
+.BrokersConsultants .panel3 .Header .headerIcon{background-image:url(/content/images/icons/brokersconsultants/panel3icon.png);}
+
+/* DentalProfessionals icons */
+.DentalProfessionals .panel1 .Header .headerIcon{background-image:url(/content/images/icons/dentalprofessionals/panel1icon.png);}
+.DentalProfessionals .panel1 {width:313px;margin-right:30px;}
+.DentalProfessionals .panel2 .Header .headerIcon{background-image:url(/content/images/icons/dentalprofessionals/panel2icon.png);}
+.DentalProfessionals .panel2 {margin-right:30px;}
+.DentalProfessionals .panel3 .Header .headerIcon{background-image:url(/content/images/icons/dentalprofessionals/panel3icon.png);}
+
+/* OralHealths icons */
+.OralHealth .panel1 .Header .headerIcon{background-image:url(/content/images/icons/oralhealth/panel1icon.png);}
+.OralHealth .panel1 {width:313px;margin-right:30px;}
+.OralHealth .panel2 .Header .headerIcon{background-image:url(/content/images/icons/oralhealth/panel2icon.png);}
+.OralHealth .panel2 {margin-right:30px;}
+.OralHealth .panel3 .Header .headerIcon{background-image:url(/content/images/icons/oralhealth/panel3icon.png);}
+
+/* Community Involvement icons */
+.CommunityInvolvement .panel1 .Header .headerIcon{background-image:url(/content/images/icons/communityinvolvement/panel1icon.png);}
+.CommunityInvolvement .panel1 {width:313px;margin-right:30px;}
+.CommunityInvolvement .panel2 .Header .headerIcon{background-image:url(/content/images/icons/communityinvolvement/panel2icon.png);}
+.CommunityInvolvement .panel2 {margin-right:30px;}
+.CommunityInvolvement .panel3 .Header .headerIcon{background-image:url(/content/images/icons/communityinvolvement/panel3icon.png);}
+
+/* International Dental icons */
+.InternationalDentalProgram .panel1 .Header .headerIcon{background-image:url(/content/images/icons/internationaldental/panel1icon.png);}
+.InternationalDentalProgram .panel1 {width:313px;margin-right:30px;}
+.InternationalDentalProgram .panel2 .Header .headerIcon{background-image:url(/content/images/icons/internationaldental/panel2icon.png);}
+.InternationalDentalProgram .panel2 {margin-right:30px;}
+.InternationalDentalProgram .panel3 .Header .headerIcon{background-image:url(/content/images/icons/internationaldental/panel3icon.png);}
+
+/************ Internal Page, e.g. Career Opportunities *********************************************************/
+
+.internalPageContent{width:644px; /* add border for debug border:1px solid blue;*/ }
+
+/* Layout A ******/
+.internalPageContent .internalPage_Layout_A{margin-top:0px;}
+.internalPageContent .internalPage_Layout_A img{margin-top:5px;margin-bottom:5px;margin-left:0px;}
+
+/* Layout B ******/
+/*total width here=644 ->150 (image) + text (489+5 (padding)=644*/
+.internalPageContent .internalPage_Layout_B .imageSection{width:150px;}
+.internalPageContent .internalPage_Layout_B .imageSection img{margin-top:17px;}
+.internalPageContent .internalPage_Layout_B .textSection{padding-left:12px;width:482px;float:right;}
+
+/*for tables on q and a pages*/
+.internalPageContent td{vertical-align:top;text-align:left;}
+
+
+/********************* dentist search styles ***********************************************************************************************/
+
+.dentistSearchButton{
+	BACKGROUND-COLOR: #51447A;
+	COLOR: #ffffff;
+}
+
+.tablebox {
+	border:#dfdfdf 1px solid;
+}
+.tablebox td{padding:2px 6px 2px 6px;background-color:#f9f9f9;}
+
+.tablebox .dentalSearchHead {
+	COLOR: #000;background-color:#fff;
+	font-size:1.8em;
+	line-height:1.5em;
+	font-family:scala, times new roman,serif;
+	border-bottom:3px #67bb49 solid;
+}
+.tablebox td.tableStartSection{padding-top:12px;}
+.tablebox td.tableEndSection{padding-bottom:14px;border-bottom:1px #b9b9b9 solid; }
+
+.DentistSearchResults > .Header{margin-bottom:0px;}
+.resultsSummaryTable{
+	width:100%;background-color:#f9f9f9;border:#dfdfdf 1px solid;
+	border-bottom:1px #b9b9b9 solid;margin-bottom:14px;
+}
+.resultsSummaryTable td{padding:2px 12px 2px 2px;text-align:right;}
+.resultsSummaryTable .SubHeader{padding-bottom:14px;text-align:left;padding-top:12px;padding-left:12px;}
+.resultsSummaryTable .Header{text-align:left;padding-top:12px;}
+.resultsSummaryTable td.tableStartSection{padding-top:12px;}
+.resultsSummaryTable td.endRow{height:12px;padding:0px;margin:0px;overflow:hidden;}
+ul.resultTableUL li{margin-bottom:8px;}
+.searchResultsPrintFriendly{height:18px;text-align:right;padding:8px 6px 0px 6px;}
+table.searchResultTable.paging{
+	border-left:1px solid #f9f9f9;border-right:1px solid #f9f9f9;border-bottom:3px solid #67bb49;
+	margin-bottom:4px;
+}
+table.searchResultTable td{padding:8px 8px 12px 8px;line-height:1.5em;}
+table.searchResultTable td.dentalSearchHead{
+	COLOR: #000;background-color:#fff;
+	font-size:1.5em;
+	line-height:1.5em;
+	font-family:scala, times new roman,serif;
+	border-bottom:3px #67bb49 solid;
+	padding:4px 8px 0px 8px;
+}
+table.searchResultTable > tbody > tr > td{border-bottom:1px solid #b9b9b9;}
+table.searchResultTable tr.odd{background-color:#f9f9f9;}
+
+
+.textindent {
+	MARGIN-LEFT: 40px;
+
+}
+
+
+
+.paging {
+	BACKGROUND: #fff; 
+	COLOR: #333333; 
+	WIDTH: 100%; 
+}
+
+
+.searchResultCell{
+	vertical-align:top;
+	padding-bottom:5px;
+}
+
+.searchResultCell a{
+	COLOR: #51447A;
+}
+
+.helpSection{
+	border:1px solid #ccc;
+	padding-bottom: 20px;
+	padding-left:10px;
+	width: 644px;
+}
+
+/** printer friendly dentist search ***/
+.printUtilities {
+	TEXT-ALIGN: right;
+}
+
+.printnumber {
+	font-weight: bold;
+	margin-left: 4px;
+}
+
+.printdentist {
+	margin-left: 14px;
+	margin-top: 4px;
+}
+
+.printTextIndent {
+	margin-left: 40px;
+}
+
+
+
+/********************* dentist search styles ***********************************************************************************************/
+
+.serviceMark{
+	font-size:11px;
+}
+
+/*********************     sitemap styles    ***********************************************************************************************/
+.sitemapContent{width:644px;margin-left:0px;margin-bottom:24px;}
+.sitemapContent .Header{
+	padding-bottom:4px;padding-top:8px;border-bottom:3px solid #67bb49;margin-bottom:12px;height:28px;
+	background:transparent url(/images/webIcons/sitemap.png) no-repeat 110px 4px;
+}
+.sitemapContent a{margin-left:12px;display:block;margin-top:4px;}
+.sitemapContent ul{
+	margin-left:35px;margin-bottom:12px;margin-top:3px;line-height:1.5em;
+	list-style-image:url(/images/sitemap_arrow.png);
+}
+.sitemapContent ul a{margin-top:0px;}
+
+
+
+
+
+
+/***********************************************************************
+ *	BEGIN STYLES BORROWED FROM MODA HEALTH SITE FOR PROTOTYPE PURPOSES *
+ ***********************************************************************/
+ 
+/* elements default/reset */
+html {
+	overflow-y:scroll;
+}
+
+*{margin:0; padding:0;outline:none;}
+body{
+	letter-spacing:0.3pt;
+	background: url('background_image.png'); /*MRO: url(https://www.modahealth.com/ProviderSearch/images/body_bg.gif);*/
+	background-position:50% 0;
+	background-repeat:repeat-y;
+	font-size:14px;
+	color:#493B31;
+}
+body.no-bg {
+	background:none;
+}
+
+#searchForm label {
+	text-transform:none;
+}
+
+table{border-collapse:collapse;}
+
+a:visited {
+	color:#0098AA;
+	text-decoration:none;
+}
+a:link,a:hover,a:active,
+
+#sortResultsForm a.tab:visited,
+.pageNum:visited,
+.downloadPrint:link,
+.downloadPrint:visited,
+#more_search_options:link,
+#more_search_options:visited,
+.prvdrBox .more a:link,
+.prvdrBox .more a:visited,
+#modalDental a:link,
+#modalDental a:visited {
+	color:#51447A; 
+	text-decoration:none;
+}
+
+a:hover {
+	text-decoration:underline !important;
+}
+a:active {
+	color:#097BB0;
+}
+
+
+/* utility */
+.clear {
+	clear: both;
+}
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}
+.hide {
+	display: none !important;
+}
+
+/* IDs */
+#pagewrap{width:1004px; margin:0 auto; position:relative;}  
+
+#contentMain{
+	clear:left;
+	/*
+	min-height:385px;
+	height:385px;
+	*/
+	overflow:visible;
+	margin:0 44px 0 104px;
+	padding:48px 0 0 0;
+}
+#contentMain{
+	width:550px;
+}
+
+#contentMain{
+	height:auto !important;
+}
+
+a.helpIcon{
+	display:block;
+	float:left;
+	height:18px;
+	width:18px;
+	margin:2px;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow:hidden;
+	background:url(th-question-mark-purple-.png) no-repeat 0px 0px;
+	border-style:none !important;
+}
+
+.mdl-inq {
+	background:url('th-question-mark-purple-.png') 0 0;
+	background-size: 15px 15px; /* 27642 */
+	float:left;
+	height:15px;
+	margin:4px 0 0 6px;
+	width:15px;
+	text-indent:-9999px;
+	border:none !important;
+	position:relative;
+}
+
+.box2 .mdl-inq {
+	margin-top:1px;
+}
+.box .mdl-inq {
+	float:right;
+	margin:1px 0 0 0;
+	*margin-top:-23px;
+}
+#modalTriggerSpecialtiesDefined {
+	top:-4px;
+	left:-10px;
+}
+#modalTriggerNetworks {
+	top:-10px;
+	left:-7px;
+}
+#contentMain ul li,
+
+#searchForm label {
+	font-size:13px;
+}
+
+body.results #contentMain{width:900px;}
+
+
+#contentMain .box{display:inline; float:left; margin:22px;}
+
+
+.box{ 
+	border:#b0006e 1px solid; 
+	border-radius: 5px;
+		 -moz-border-radius: 5px;
+		 -webkit-border-radius: 5px;
+		 -khtml-border-radius: 5px; 
+	margin:22px 0 22px 0 !important; 
+	padding:0 15px 0 15px; 
+	width:170px;
+}
+.box h2 {
+	width:158px; 
+	position:relative;
+	top:-5px;
+	left:-17px;
+}
+
+
+#searchForm {
+	background:#e0f1ed;
+	border-radius:5px;
+	padding:15px;
+	*overflow:hidden;
+}
+#searchForm {
+	padding-right:5px;
+}
+
+.modaBtn {
+	background:#51447A;
+	color:#fff;
+	border:none;
+	padding:2px 10px;
+	border-radius:5px;
+	font-size:17px;
+	margin:10px 0 0 0;
+	position:relative;
+	left:-3px;
+}
+.modaBtn:hover {
+	cursor:pointer;
+	background:#650141;
+}
+.modaText,
+.modaTextArea,
+
+.ui-widget select,
+.ui-widget textarea,
+.ui-widget button  {
+	border-radius:5px;
+	/*height:25px;*/
+	/*line-height:25px;*/
+	height:19px;
+	line-height:19px;
+	border: 1px solid #b9b1a9;
+	padding:0 .25em;
+	font-family:omnes_ods_regularregular, verdana, sans-serif !important;
+	font-size:13px !important;
+	color:#000 !important;
+}
+.modaTextArea {
+	height:250px;
+	width:240px;
+}
+.search {
+	width:240px;
+}
+.zip {
+	width:85px;
+}
+
+.dentalRegion h2{color:#74bf2a; font-size:128%/*13.5px*/ !important;}
+.dentalRegion a{color:#3095b8 !important; border-style:dotted; border-width:0 0 1px 0;}
+
+/*
+#actions .box h2{color:#74bf2a;}
+*/
+#actions p{width:190px; margin:22px 0 32px 0;}
+
+
+#contentMainHelp p.emphasis,
+p.emphasis {
+	/*
+	font-weight:bold;
+	font-style:italic;
+	*/
+	font-family:'omnes_ods_mediumitalic', verdana, sans-serif;
+}
+
+#searchForm input,
+#noLocationForm input{
+	margin: 0 .25em .5em 0;
+	clear:left;
+}
+#searchForm input,
+#searchForm .dk_theme_moda,
+#searchForm .dropdown {
+	margin-right:10px;
+}
+#searchForm  .dk_container .dk_toggle:active{
+	background-color:#C25F92;
+}
+#searchForm label, 
+#searchForm .label, 
+#noLocationForm label, 
+#noLocationForm .label{
+	clear:left;
+	font-size:13px;
+	font-family:'omnes_ods_mediumregular', verdana, sans-serif;
+	text-transform:none;
+	margin-top:10px;
+}
+#noLocationForm .dk_container li {
+	list-style-image:none !important;
+}
+
+#searchEligFormAction {
+	margin:0;
+}
+
+#searchForm .advanced,
+#noLocationForm .advanced{
+	display:none;
+}
+.row {
+	display:block;
+	width:100%;
+	float:left;
+}
+
+
+.minimalContent{width:400px; display:inline; float:left; margin:0 0 0 32px;}
+
+#navMain{width:279px; display:inline; float:left; margin:0 0 0 -52px; position: relative;}
+#navMain .box{margin:0;}
+#navMain p{
+	margin:1.2em;
+}
+
+.col1,
+.col2,
+.colSpan {
+	padding-top:5px;
+}
+
+.col1.no-top-pad, .col2.no-top-pad {
+	padding-top:0;
+} 
+.noLabel {
+	padding:5px 0;
+}
+input.noLabel {
+	padding:0 0.25em;
+	margin:5px 0 !important;
+}
+.col1,
+.col2 {
+	float:left;
+}
+.col1 {
+	margin-right:10px;
+}
+.colNetwork {
+	*min-height:67px;
+}
+#searchForm #dk_container_state,
+#noLocationForm #dk_container_stateDialog  {
+	margin-right:18px;
+}
+#navMain .col1,
+#navMain .col2,
+.colSpan {
+	float:none;
+	margin-right:0;
+	clear:left;
+}
+
+#navMain .search,
+#navMain .zip {
+	width:240px !important;
+}
+#searchForm .dk_toggle {
+	width:206px !important;
+}
+#searchForm #dk_container_distance .dk_toggle,
+#searchForm #dk_container_language .dk_toggle,
+#searchForm #dk_container_gender .dk_toggle,
+.ui-dialog .dk_toggle {
+	width:230px !important;
+}
+#searchForm #dk_container_state .dk_toggle {
+	width:60px !important;
+}
+/*Added style, dk init will add custom class once selection is made*/
+#searchForm .toggle_selected {
+	background-color:#C25F92;
+}
+#searchForm .toggle_selected span, .dropdown dt.selectedNetworks span.toggle_selected{
+	color:#ffffff !important;
+}
+#noLocationForm #submitLocation {
+	 clear:left;
+	 margin:20px 0 0 170px;
+	 margin-left:165\9;
+}
+#noLocationDiv{display:none;}
+#dentalRegionDialog{display:none;}
+#medicalRegionDialog{display:none;}
+#visionRegionDialog{display:none;}
+#pharmacyRegionDialog{display:none;}
+li#pharmacyRegionDialogMain3 {
+	font-weight: 1.1em;
+}
+li#pharmacyRegionDialogMain3 span.parenthetical {
+	font-size: 70%;
+	font-style: italic;
+}
+	
+
+#searchForm p{margin: .5em 0 0 0; clear:left;}
+
+
+#navMain .bottomGo {
+	top:30px;
+}
+#navMain #searchForm {
+	margin-bottom:20px;
+}
+
+
+#autocomplete_close {
+	border-left: 1px solid #fff;
+}
+
+
+table.location tbody tr{}
+.jqmWindow{display:none;}
+.resultsColumn{width:260px; float:left;}
+
+#providers_map{
+    text-align: right;
+    width: 528px;
+    height: 400px;
+}
+
+
+#resultsContent{ position: relative; float:left; display:inline; clear:right; width:526px; /*598*/ padding: 12px 35px; background-color:#ffffff; border:solid 1px #cccccc; margin:0 0 0 34px; border-radius:6px; -moz-border-radius:6px; -webkit-border-radius:6px; /*behavior:url(https://www.modahealth.com/ProviderSearch/js/border-radius.htc);*/}
+.prvdrBox {float:left; width:494px; background-color:#ffffff; border:solid 1px #dddddd; border-radius:6px; -moz-border-radius:6px; -webkit-border-radius:6px; /*behavior:url(https://www.modahealth.com/ProviderSearch/js/border-radius.htc);*/ padding:8px 16px 0 16px; margin:0 0 16px 0;}
+.prvdrBox a{
+	font-family:'omnes_ods_mediumregular', verdana, sans-serif;
+}
+.prvdrBox .location,
+#details .location,
+#details2 .location{
+	/*min-height:6.5em;*/
+	min-height:5.5em;
+	float:right;
+	display:inline;
+	padding:5px 5px 0 10px;
+	margin:0.5em 0;
+	width:300px;
+	background-color:#f0edeb;
+	border:solid 1px #e9e9e9;
+	border-radius:6px;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	/*behavior:url(https://www.modahealth.com/ProviderSearch/js/border-radius.htc);*/
+}
+.prvdrBox .location {
+	min-height:0;	
+}
+
+.prvdrBox .location.altRow,
+.prvdrBox .location,
+#details .location.altRow,
+#details2 .location.altRow{
+	float:left;
+	width:222px;
+}
+.prvdrBox .location{
+	float:right;
+}
+
+.prvdrBox td{vertical-align:top;}
+.prvdrBox p{margin-bottom:0.5em; clear:both;}
+
+.prvdrBox td p{
+	padding-left:0;
+}
+.prvdrBox td p,
+.location .tooltipIcon {
+	float:left;
+}
+.prvdrBox .location .tooltipIcon {
+	top:0;
+}
+
+.prvdrBox p.name{text-transform:uppercase; margin-left:0;}
+.prvdrBox p.label{float:left; width:80px;}
+.prvdrBox p.list,
+.prvdrBox ul.list{
+	margin-left:0;
+	padding-left:0;
+	float:left;
+	width:150px;
+	clear:none;
+}
+.prvdrBox ul.list li {
+	line-height:1;
+	list-style-image:none !important;
+	list-style-type: none;
+	margin-bottom:5px !important;
+	*width:100%;
+}
+.prvdrBox p.more a{padding-right:12px; background:url(https://www.modahealth.com/ProviderSearch/images/more_arrow.gif) no-repeat center right;}
+
+.prvdrBox .note{text-transform:none; font-family:'omnes_ods_regularitalic', verdana, sans-serif;}
+.prvdrBox .note2,
+.prvdrBox .tooltipIcon {
+	text-transform:none;
+	padding-left:10px;
+}
+.prvdrBox .tooltipIcon {
+	position:relative;
+	top:8px;
+}
+.prvdrBox .medicalHomeSubhead {
+	display:inline-block;
+}
+
+.medicalHomeIconLocation {
+	width:140px;
+}
+
+.prvdrBox .networks{
+	float:right;
+	clear:left;
+	padding:5px 5px 0 10px;
+	margin:0.5em 0;
+	width:230px;
+	*clear:right;
+}
+.prvdrBox .more{float:left; clear:left;padding:5px 5px 0 10px; margin:0.5em 0; width:222px;}
+.prvdrBox .more a{
+	padding-right:12px;
+	background:url(https://www.modahealth.com/ProviderSearch/images/bullet_arrow.gif) no-repeat;
+	background-position:right 5px;
+}
+
+.prvdrBox h3 {
+	display:inline;
+}
+
+#details *,
+#details2 * {
+	line-height:1.2;
+}
+#details td,
+#details2 td {
+	line-height:1.1;
+}
+#details table,
+#details2 table {
+	margin:1px 0 0 0;
+}
+
+
+#details .location table td .marker,
+#details2 .location table td .marker {
+	margin-right:10px;
+}
+
+#details .note,
+#details2 .note{text-transform:none; font-style:italic;}
+#details .networks,
+#details2 .networks{float:right; clear:left; padding:5px 5px 0 10px; margin:0.5em 0; width:300px;}
+#details .more,
+#details2 .more{
+	float:left;
+	clear:left;
+	padding:5px 5px 0 0;
+	margin:0.5em 0;
+	width:300px;
+}
+
+#resultsContent a.marker,
+#details a.marker,
+#details2 a.marker{
+	display:block;
+	color:#fff !important;
+	font-size:12px;
+	font-weight:bold;
+	text-align:center;
+	line-height: 22px;
+	border-style:none;
+	width:24px;
+	height:35px;
+	background-image:url(https://www.modahealth.com/ProviderSearch/images/plummarker.png);
+	font-family:'omnes_ods_regularregular', verdana, sans-serif;
+}
+
+.bottomGo{display:block; height:27px; width:27px; margin:0 auto -14px auto !important; position:relative; left:-1px; clear:left;}
+#searchForm .bottomGo{margin-bottom:0 !important;}
+
+#details,
+#details2 {
+	width:700px !important;
+	height:530px !important;
+	overflow:auto;
+	*position:relative;
+}
+#details #pagewrap,
+#details #contentDecorator,
+#details2 #pagewrap,
+#details2 #contentDecorator {
+	width:auto;
+}
+#details #provider_map,
+#details2 #provider_map{clear:both; margin-bottom:15px;}
+#details .location,
+#details2 .location{float:left;}
+#details .providerName,
+#details2 .providerName {
+	font-size: 1.2em;
+	font-family:'omnes_ods_mediumregular', verdana, sans-serif;
+}
+#details2 h1.providerName {
+	font-size:22px;	
+}
+#details .providerName,
+#details2 .providerName {
+	margin-top:0;
+}
+
+#modalProviderDistance #noLocationForm {
+	height:285px\9;
+	*height:285px;
+}
+
+.smaller {
+	font-size:11px;
+}
+.medium {
+	font-size:12px;
+}
+.moreTopSpacing,
+#searchForm .moreTopSpacing {
+	margin-top:27px;
+}
+.moreBottomSpacing,
+.providerDetails.ui-dialog .ui-dialog-content .moreBottomSpacing {
+	margin-bottom:15px;
+}
+
+/*Changes related to new sub-menu items for AllotherStates/Dental option*/
+.dntRegDlg ul, .phrDlg ul{
+    list-style-type: none;
+}
+
+#searchForm .performSrchProv {
+	margin:10px 0 0 205px;
+}
+
+#navMain #searchForm .performSrchProv {
+	margin-left:87px;
+}
+/*search results dropkick truncation*/
+#navMain #searchForm #dk_container_speciality .dk_toggle {
+	width:207px !important;
+}
+#navMain #searchForm .dk_toggle,
+#noLocationForm .dk_toggle {
+	width:231px !important;
+}
+#navMain #searchForm .dropdown dt.selectedNetworks {
+	width:222px;
+}
+#navMain #searchForm h2 {
+	margin-top:0;
+	margin-bottom:15px;
+	color:#51447A;
+}
+
+
+#zip,
+#zipDialog {
+	text-transform:uppercase;
+}
+
+div.listofcontents_right ul.listofcontents_right li.listofcontents_right{
+    float: left;
+    list-style-type: none;
+    position: relative;
+}
+
+/* START - STYLES FOR NETWORKS DROP DOWN SEARCH COMPONENT */       
+.dropdown dd, .dropdown dt{ 
+    margin:0px;
+    padding:0px;
+}
+
+
+#speciality{
+    color: #fff;
+    /*background:#ffffff url(https://www.modahealth.com/ProviderSearch/images/arrow_black.png) no-repeat scroll right center;*/
+    border: 1px solid #f0f0f0;
+    border-top: 1px solid #ccc;
+    cursor:pointer;
+    width: 227px;
+    
+    background-image: url('drop_down_arrow.png'); /*MRO: https://www.modahealth.com/ProviderSearch/images/dk_arrow2.png');*/
+  	background-position: right center;
+  	background-repeat: no-repeat;
+  	background-size: 20px 20px;
+  	background-color:#fff;
+  	border:1px solid #b9b1a9;
+  	color:#51447A;
+}
+
+
+#state,#distance{
+    color: #fff;
+    /*background:#ffffff url(https://www.modahealth.com/ProviderSearch/images/arrow_black.png) no-repeat scroll right center;*/
+    border: 1px solid #f0f0f0;
+    border-top: 1px solid #ccc;
+    cursor:pointer;
+    width: 247px;
+    
+    background-image: url('drop_down_arrow.png'); /*MRO: https://www.modahealth.com/ProviderSearch/images/dk_arrow2.png');*/
+  	background-position: right center;
+  	background-repeat: no-repeat;
+  	background-size: 20px 20px;
+  	background-color:#fff;
+  	border:1px solid #b9b1a9;
+  	color:#51447A;
+}
+
+
+.dropdown dt.selectedNetworks{
+    color: #fff;
+    /*background:#ffffff url(https://www.modahealth.com/ProviderSearch/images/arrow_black.png) no-repeat scroll right center;*/
+    border: 1px solid #f0f0f0;
+    border-top: 1px solid #ccc;
+    cursor:pointer;
+    width: 222px;
+    
+    background-image: url('drop_down_arrow.png'); /*MRO: https://www.modahealth.com/ProviderSearch/images/dk_arrow2.png');*/
+  	background-position: right center;
+  	background-repeat: no-repeat;
+  	background-size: 20px 20px;
+  	background-color:#fff;
+  	border:1px solid #b9b1a9;
+  	color:#51447A;
+}
+.dropdown dt.selectedNetworks span {
+	color:#51447A; !important;
+	position:relative;
+	top:-1px;
+}
+#distance:hover,#state:hover,#speciality:hover,.dropdown dt.selectedNetworks:hover,
+.dropdown dt.selectedNetworks:hover span {
+	text-decoration: none;
+	background-color:#650141;/*MRO: #c25f92;*/
+	color:#fff !important;
+}
+
+.dropdown dd.allNetworksList {
+    padding:7px; 
+    background:red;/*MRO: #ffffff;*/
+    border: 1px solid #B9B1A9;
+    position:relative;
+    display:none;
+    width:208px;
+    overflow: auto;
+    z-index:2147483647;
+    height:350px;
+    border-radius:0 0 5px 5px;
+    clear:left;
+    float:none;
+    top:-25px;
+}
+
+.listofcontents_right,
+.dropdown,
+.dropdown .selectedNetworks {
+	height:19px;
+	float:left;
+	margin-bottom:23px;
+}
+.allNetworkSpan {
+	display:block;
+	height:19px;
+}
+.dropdown .tip_trigger {
+	position:relative;
+	top:-8px;
+}
+.dropdown {
+	margin-bottom:10px;
+}
+.dropdown .selectedNetworks,
+.dropdown dt.selectedNetworks span.selectedNetworksTxt {
+	height:37px;
+}
+.dropdown dt.selectedNetworks span.selectedNetworksTxt {    
+    display:block;
+    padding:0 0 0 5px;
+    white-space: nowrap;
+    /*width:180px;*/
+    width:198px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    color: #000;
+	height:38px;
+	*height:auto;
+	font-size:13px;
+}
+
+.dropdown dd.allNetworksList dl dd ul li{
+    list-style-type: none;
+    cursor:pointer;
+    margin-bottom:0 !important;
+    height:auto;
+    width:198px;
+}
+#searchForm .dropdown dd.allNetworksList dl dd ul li input,
+#searchForm .dropdown dd.allNetworksList dl dd ul li span {
+	/*float:left; ez-check floats left*/
+}
+#searchForm .dropdown dd.allNetworksList dl dd ul li input {
+	margin-right:5px;
+}
+#searchForm .dropdown dd.allNetworksList dl dd ul li span {
+	line-height:1.3em;
+	width:175px;
+}
+#searchForm .dropdown dd.allNetworksList dl dd ul li label {
+	*padding:0;
+	*clear:left;
+}
+#searchForm .dropdown dd.allNetworksList dl dd ul li label input {
+	*position:relative;
+	*top:2px;
+	*width:20px;
+	*float:left;
+}
+#searchForm .dropdown dd.allNetworksList dl dd ul li label span {
+	*width:170px;
+	*float:none;
+	*padding-left:13px;
+}
+
+.dropdown dd.allNetworksList dl dt span{
+    font-size:13px;
+    text-transform:uppercase;
+    padding: 10px;
+    clear:left;
+    display:block;
+}
+
+.dropdown dd ul.listCntrls {
+    margin: 0;
+    padding: 0;
+    float: left;
+    width: 197px;
+    list-style: none;
+    position: relative;
+    background: #51447A; 
+    margin-bottom: 1.5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+.dropdown dd ul.listCntrls li.listCntrls {
+    float: left;
+    margin: 0;
+    padding: 0;
+    margin-bottom:0 !important;
+}
+
+.dropdown dd ul.listCntrls li.brdRght {
+    border-right: 1px solid #ffffff;
+}
+
+.dropdown dd ul.listCntrls li.listCntrls a {
+    padding: 5px 18px;
+    display: block;
+    color: #ffffff !important;
+    text-decoration: none !important;
+}
+
+.dropdown dd.theQabout{
+    position:absolute;
+    left:230px;
+    top:6px;
+}
+
+#searchForm #acceptp {
+	padding:0 0 10px 0;
+	*padding-top:5px;
+	margin-bottom:0;
+}
+#acceptp span,
+#acceptp input {
+	float:left;
+}
+#acceptp span {
+	position:relative;
+	top:-3px;
+	*top:0px;
+}
+#acceptp span:hover {
+	cursor:pointer;
+}
+#navMain #acceptp span {
+	width:225px;
+	line-height:1;
+	top:-2px;
+}
+#more_search_options {
+	font-family:'omnes_ods_mediumregular', verdana, sans-serif;
+	padding:10px 0 15px 0;
+	*padding:0;
+	display:inline-block;
+}
+
+#contentMain .networks ul.list li {
+    float: none;
+}
+
+#map_canvas {
+	position: relative;
+	float:right;
+	display:inline;
+	clear:right;
+	width:526px; /*598*/
+	height:326px; /*598*/
+	padding: 12px 35px;
+	background-color:#ffffff;
+	border:solid 1px #cccccc;
+	margin:0 0 0 34px;
+	border-radius:6px;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	/*behavior:url(https://www.modahealth.com/ProviderSearch/js/border-radius.htc);*/
+}
+
+
+

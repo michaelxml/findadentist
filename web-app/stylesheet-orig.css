@@ -1,0 +1,2066 @@
+/********************************
+ *	Faces Components Stylesheet *
+ ********************************/
+ 
+ @font-face {
+    font-family: 'omnes_ods_mediumregular';
+    src: url('https://www.modahealth.com/ProviderSearch/theme/fonts/omnesods_medium-roman-webfont.eot'); 											/* IE9 Compat Modes */
+    src: url('https://www.modahealth.com/ProviderSearch/theme/fonts/omnesods_medium-roman-webfont.eot?#iefix') format('embedded-opentype'), 		/* IE6-IE8 */
+         url('https://www.modahealth.com/ProviderSearch/theme/fonts/omnesods_medium-roman-webfont.woff') format('woff'),							/* Modern Browsers */
+         url('https://www.modahealth.com/ProviderSearch/theme/fonts/omnesods_medium-roman-webfont.ttf') format('truetype'),						/* Safari, Android, iOS */
+         url('https://www.modahealth.com/ProviderSearch/theme/fonts/omnesods_medium-roman-webfont.svg#omnes_ods_mediumregular') format('svg');	/* Legacy iOS */
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'omnes_ods_mediumitalic';
+    src: url('https://www.modahealth.com/ProviderSearch/theme/fonts/omnesods_medium-italic-webfont.eot');
+    src: url('https://www.modahealth.com/ProviderSearch/theme/fonts/omnesods_medium-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('https://www.modahealth.com/ProviderSearch/theme/fonts/omnesods_medium-italic-webfont.woff') format('woff'),
+         url('https://www.modahealth.com/ProviderSearch/theme/fonts/omnesods_medium-italic-webfont.ttf') format('truetype'),
+         url('https://www.modahealth.com/ProviderSearch/theme/fonts/omnesods_medium-italic-webfont.svg#omnes_ods_mediumitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'omnes_ods_regularregular';
+    src: url('https://www.modahealth.com/ProviderSearch/theme/fonts/omnesods_regular-roman-webfont.eot');
+    src: url('https://www.modahealth.com/ProviderSearch/theme/fonts/omnesods_regular-roman-webfont.eot?#iefix') format('embedded-opentype'),
+         url('https://www.modahealth.com/ProviderSearch/theme/fonts/omnesods_regular-roman-webfont.woff') format('woff'),
+         url('https://www.modahealth.com/ProviderSearch/theme/fonts/omnesods_regular-roman-webfont.ttf') format('truetype'),
+         url('https://www.modahealth.com/ProviderSearch/theme/fonts/omnesods_regular-roman-webfont.svg#omnes_ods_regularregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'omnes_ods_regularitalic';
+    src: url('https://www.modahealth.com/ProviderSearch/theme/fonts/omnesods_regular-italic-webfont.eot');
+    src: url('https://www.modahealth.com/ProviderSearch/theme/fonts/omnesods_regular-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('https://www.modahealth.com/ProviderSearch/theme/fonts/omnesods_regular-italic-webfont.woff') format('woff'),
+         url('https://www.modahealth.com/ProviderSearch/theme/fonts/omnesods_regular-italic-webfont.ttf') format('truetype'),
+         url('https://www.modahealth.com/ProviderSearch/theme/fonts/omnesods_regular-italic-webfont.svg#omnes_ods_regularitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* elements default/reset */
+html {
+	overflow-y:scroll;
+}
+
+*{margin:0; padding:0;outline:none;}
+body{
+	letter-spacing:0.3pt;
+	background: url('./background_image.png'); /*MRO: url(https://www.modahealth.com/ProviderSearch/images/body_bg.gif);*/
+	background-position:50% 0;
+	background-repeat:repeat-y;
+	font-size:14px;
+	color:#493B31;
+}
+body.no-bg {
+	background:none;
+}
+h1, h2, h3, p, ul, ol, td, th, input, label, caption, dl, form, div, span {
+	font-family:'omnes_ods_regularregular', verdana, sans-serif;
+	color:#493B31;
+	line-height:1.5em;
+}
+p{
+	line-height:1.2em;
+	margin:0 0 .7em 0;
+}
+b, strong, .modaBtn, .provMarkerLabel p {
+	font-family:'omnes_ods_mediumregular', verdana, sans-serif !important;
+	font-weight: normal !important;
+    font-style: normal !important;
+}
+
+h1, h2, h3 {
+	font-family:'omnes_ods_mediumregular', verdana, sans-serif;
+	font-weight:normal;
+}
+h1, h2, h3, h4,
+#results .subhead {
+	line-height:1em;
+	margin:1em 0 .25em 0;
+}
+h4 {
+	font-family:'omnes_ods_regularregular', verdana, sans-serif;
+	font-weight:normal;
+}
+em, h3,
+#results .subhead {
+	font-family:'omnes_ods_mediumitalic', verdana, sans-serif;
+}
+
+h4{font-size:13px; color:#493B31; text-transform:uppercase;}
+h3,
+#details h1,
+#results .subhead {
+	font-size:15px;
+	color:#2FB5B7;
+}
+#results .subhead a:link,
+#results .subhead a:visited {
+	color:#0098AA !important;
+}
+#results .subhead {
+	text-transform:none;
+}
+h2 {font-size:18px; color:#493B31;}
+h1{font-size:22px; color:#51447A; margin:0 0 .5em 0;}
+
+label{
+	font-family:'omnes_ods_mediumregular', verdana, sans-serif;
+	font-size:10px;
+	text-transform:uppercase;
+	display:block;
+	margin:0 0 0.2em 0 !important;
+}
+
+#searchForm label {
+	text-transform:none;
+}
+
+table{border-collapse:collapse;}
+
+a:visited {
+	color:#0098AA;
+	text-decoration:none;
+}
+a:link,a:hover,a:active,
+
+#sortResultsForm a.tab:visited,
+.pageNum:visited,
+.downloadPrint:link,
+.downloadPrint:visited,
+#more_search_options:link,
+#more_search_options:visited,
+.prvdrBox .more a:link,
+.prvdrBox .more a:visited,
+#modalDental a:link,
+#modalDental a:visited {
+	color:#51447A; 
+	text-decoration:none;
+}
+
+a:hover {
+	text-decoration:underline !important;
+}
+a:active {
+	color:#097BB0;
+}
+
+#modalDental {
+	font-family:'omnes_ods_mediumregular', verdana, sans-serif;
+}
+
+
+/*
+#contentMain a:link,
+#contentMain a:visited,
+#contentMain a:hover,
+#contentMain a:active,
+#actions a:link,
+#actions a:visited,
+#actions a:hover,
+#actions a:active,
+#footer a:link,
+#footer a:visited,
+#footer a:hover,
+#footer a:active,
+.ui-widget-content a:link,
+.ui-widget-content a:visited,
+.ui-widget-content a:hover,
+.ui-widget-content a:active,
+.dentalRegion a:active{
+	color:#3095b8;
+	border-style:dotted;
+	border-width:0 0 1px 0;
+}
+*/
+
+iframe#specialties {
+	border:none !important;
+	width:680px;
+	height:530px;
+	margin:0 0 0 12px;
+}
+#resultsModalContent {
+	width:680px;
+	height:400px;
+	overflow:auto;
+	margin:0 auto;
+}
+
+#provSpecTable td {
+	padding:12px;
+	
+}
+#provSpecTable td.term {
+	font-family:'omnes_ods_mediumregular', verdana, sans-serif;
+	vertical-align:top;
+}
+
+/* utility */
+.clear {
+	clear: both;
+}
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}
+.hide {
+	display: none !important;
+}
+
+/* IDs */
+#pagewrap{width:1004px; margin:0 auto; position:relative;}  
+
+#logoWrap {
+	float:left;
+	margin:55px 0 0 50px;
+}
+a#logoMain{
+	height:71px;
+	width:145px;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow:hidden;
+	background:url(https://www.modahealth.com/ProviderSearch/images/moda.png) no-repeat 0px 0px;
+	display:block;
+}
+#logo_ods {
+	font-size:14px;
+	text-align:right;
+	margin:25px 0 0 0;
+}
+
+a#logoAlaska{float:left; height:82px; width:83px; margin:55px 0 0 104px; text-indent: 100%; white-space: nowrap; overflow:hidden; background:url(https://www.modahealth.com/ProviderSearch/images/logoAlaska_bg.gif) no-repeat 0px 0px;}
+
+#navUtil{
+	float:right;
+	width:746px;
+	height:77px;
+	background:url(https://www.modahealth.com/ProviderSearch/images/utility_bg.png) no-repeat;
+	position:relative;
+}
+
+#navUtil label{text-align:right; color:#ffffff;}
+#navUtil input.inputText{float:left; background:url(https://www.modahealth.com/ProviderSearch/images/navUtilInput_bg.gif) no-repeat; height:19px; border:none; margin:4px 0 0 0; padding:0 0 0 5px; width:128px;}
+#navUtil input.go{float:left; margin:4px 0 0 0; padding:0;}
+#navUtil ul{float:left; padding:42px 0 0 4px;}
+#navUtil li{float:left; position:relative; list-style:none; padding-left:3px; height:13px; border-right:1px solid #ffe92c; }
+#navUtil span{display:block;}
+#navUtil li a{display:block; float:left; color:#ffffff; padding:0 10px; text-decoration:none; font-size:15px; line-height:13px;}
+#navUtil li a:hover {
+	text-decoration:underline;
+	color:#FFE92C;
+}
+/*level2*/
+#navUtil ul ul{position:absolute; top:29px; left:-14px; padding:0 7px 7px 7px; width:106px; background:url(https://www.modahealth.com/ProviderSearch/images/navUtil_sub_bg.png) bottom left no-repeat; display:none;}
+#navUtil li li{float:none; clear:both; list-style:none; padding:0; border-width:2px 0 0 0; border-style:solid; border-color:#d4d4d4;}
+#navUtil li li a{text-align:center; width:96px; color:#3095b8; padding:3px 5px 5px 5px;}
+#navUtil li li a:hover{color:#74bf2a; background-color:#f1f1f1;}
+#navUtil li.current a{ color:#ffe92c; }
+#navUtil li.last {border:none;}
+#navUtil form{display:none;}
+
+
+#greetUser{
+	color:#d5c9c6;
+	position:absolute;
+	top:15px;
+	right:15px;
+	line-height:1;
+	font-family:'omnes_ods_mediumitalic', verdana, sans-serif;
+}
+#errorMsgs p{font-weight:bold; color:#000;}
+
+#errorMessageId li,
+li.alert{
+	list-style:none !important;
+	float:none !important;
+	*list-style-image:none !important;
+}
+
+#errorMessageId,
+#visitorDisclm,
+#searchEligFormAction\:errorMessageIdAction {
+                background:#FEFBDF;
+                line-height:1.2;
+                margin-bottom:15px;
+}
+.error-msg {
+                background:#fefbdf;
+}
+
+
+#errorMessageId,
+#visitorDisclm,
+#searchEligFormAction\:errorMessageIdAction {
+                font-family:omnes_ods_mediumregular, verdana, sans-serif;
+                width:auto;
+                padding:1.3em 1em .5em 3.3em;
+                background-image:url(https://www.modahealth.com/ProviderSearch/images/alert.png);
+                background-position:15px 15px;
+                background-repeat:no-repeat;
+                min-height:30px;
+}
+#searchEligFormAction\:errorMessageIdAction {
+                background-position:5px 15px;
+                padding:.75em .45em .75em 2.5em;
+}
+
+
+#visitorDisclm {
+	background:#FEFBDF;
+	line-height:1.2;
+	margin-bottom:15px;
+}
+.error-msg {
+	background:#fefbdf;
+}
+
+
+#errorMessageId,
+#visitorDisclm {
+	font-family:omnes_ods_mediumregular, verdana, sans-serif;
+	width:auto;
+	padding:1.3em 1em .5em 3.3em;
+	background-image:url(https://www.modahealth.com/ProviderSearch/images/alert.png);
+	background-position:15px 15px;
+	background-repeat:no-repeat;
+	min-height:30px;
+}
+.error-msg li {
+	background:none;
+	margin:0 0 4px 0;
+	line-height:1;
+	padding-left:0;
+}
+
+#categoryNav{float:right; clear:right; width:746px;}
+#categoryNav span{display:block; float:left; margin:0 0 0 18px;}
+#categoryNav a{
+	display:block; 
+	font-family:'omnes_ods_mediumregular', verdana, sans-serif;
+	/*font-size:13px;*/
+	padding:0;
+}
+#categoryNav #details2 a {
+	display:inline-block;
+	font-family:omnes_ods_mediumregular, verdana, sans-serif;
+}
+#categoryNav a.current{
+	background:url(https://www.modahealth.com/ProviderSearch/images/subnav_arrow.png) bottom center no-repeat;
+	padding-bottom:8px;
+	font-family:'omnes_ods_mediumregular', verdana, sans-serif;
+}
+#categoryNav #details2 a.current {
+	background:none !important;
+}
+#categoryNav a:link,
+#categoryNav a:visited {
+	color:#c25f92;
+}
+.reveal-modal a,
+#categoryNav a.current {
+	color:#51447A; !important;
+}
+
+.top-space { top:20px !important; }
+
+.netwkDisclm {
+	background:url(https://www.modahealth.com/ProviderSearch/images/alert.png) #FEFBDF no-repeat 15px 15px;
+	padding:22px 10px 15px 50px;
+	font-family:'omnes_ods_mediumregular', verdana, sans-serif;
+	clear: left;
+	line-height:1.2;
+	margin:15px 0 15px 0;
+	}
+
+#contentMain{
+	clear:left;
+	/*
+	min-height:385px;
+	height:385px;
+	*/
+	overflow:visible;
+	margin:0 44px 0 104px;
+	padding:48px 0 0 0;
+}
+#contentMain{
+	width:550px;
+}
+#footer {
+	padding:50px 30px 0 100px;
+	font-size:9px;
+	line-height:1.2;
+}
+.results #footer {
+	padding:50px 30px 0 50px;
+}
+
+#contentMain{
+	height:auto !important;
+}
+
+a.helpIcon{
+	display:block;
+	float:left;
+	height:18px;
+	width:18px;
+	margin:2px;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow:hidden;
+	background:url(th-question-mark-purple-.png) no-repeat 0px 0px;
+	border-style:none !important;
+}
+
+/* Modal styles */
+.reveal-modal h1, .reveal-modal h1 {
+	background-color:#ffffff;/* IE fix for choppy edges */
+	font-size:3em;
+	margin:20px 0 10px 0;
+	line-height:.75em;
+}
+.reveal-modal {
+	 background-color:#ffffff;
+	 border:#b0006e 1px solid;
+	 border-radius: 15px;
+		 -moz-border-radius: 15px;
+		 -webkit-border-radius: 15px;
+		 -khtml-border-radius: 15px;
+	 overflow:visible;
+	 padding:25px 15px 25px 15px;
+	 z-index:1001; /*(dupe of reveal.css for selctive inclusion) if ie gets thrown into compat mode, keeps visible modals on top of form dropdowns (dropkick), which get z-index 1000*/
+}
+.reveal-modal p,
+.tooltip.ui-dialog p {
+	background-color:#ffffff;
+	font-family:omnes_ods_regularregular, verdana, sans-serif;
+}
+.reveal-modal .last,
+.tooltip.ui-dialog .last,
+.tip .last {
+	margin-bottom:0;
+}
+.reveal-modal.modalSmall {
+	margin-left: -115px;
+	overflow:hidden;
+	width:260px;
+}
+.reveal-modal.modalMedium{
+	margin-left: -210px;
+	width:400px;
+}
+.reveal-modal.modalLarge {
+	width:710px;
+	margin-left:-350px
+}
+.reveal-modal.iframe {
+	height:530px;
+	margin-top:-80px;
+}
+.reveal-modal .single_spaced {
+	line-height:1.3;
+	margin-bottom:1em;
+}
+.reveal-modal .modalClose {
+	position:absolute;
+	right:0;
+	top:0;
+	background:url('https://www.modahealth.com/ProviderSearch/images/modal/modal_close.png') no-repeat;
+	background:url('https://www.modahealth.com/ProviderSearch/images/modal/modal_close2.png') no-repeat\9;
+	*background:url('https://www.modahealth.com/ProviderSearch/images/modal/modal_close2.png') no-repeat;
+	width:18px;
+	height:18px;
+	text-indent:-9999px;
+}
+.reveal-modal .modalClose:hover {
+	cursor:pointer;
+}
+.reveal-modal h2,
+.tooltip.ui-dialog h2,
+.smallTip h2 {
+	margin-left:18px;
+	margin-bottom:15px;
+}
+.reveal-modal #details2 h2 {
+	margin-left:0;
+}
+.smallTip h2 {
+	margin-left:0;
+}
+.reveal-modal ul,
+.tooltip.ui-dialog ul {
+	margin-left:33px;
+	font-family:'omnes_ods_mediumregular', verdana, sans-serif;
+}
+
+.reveal-modal ol, 
+.tooltip.ui-dialog ol {
+	margin-left: 33px;
+}
+
+#noLocationForm .dk_options ul {
+	margin-left:0;
+}
+.reveal-modal ul li {
+	width:100%;
+}
+.mdl-inq {
+	background:url('th-question-mark-purple-.png') 0 0;
+	background-size: 15px 15px; /* 27642 */
+	float:left;
+	height:15px;
+	margin:4px 0 0 6px;
+	width:15px;
+	text-indent:-9999px;
+	border:none !important;
+	position:relative;
+}
+
+.box2 .mdl-inq {
+	margin-top:1px;
+}
+.box .mdl-inq {
+	float:right;
+	margin:1px 0 0 0;
+	*margin-top:-23px;
+}
+#modalTriggerSpecialtiesDefined {
+	top:-4px;
+	left:-10px;
+}
+#modalTriggerNetworks {
+	top:-10px;
+	left:-7px;
+}
+.tooltiptip img,
+.tooltipIcon img {
+	cursor:pointer;
+}
+.tooltipIcon:hover {
+	text-decoration:none !important;
+}
+#contentMain ul li,
+#categoryNav ul li {
+	margin-bottom: .2em;
+	list-style-image: url("https://www.modahealth.com/ProviderSearch/images/bullet_arrow.gif");
+	list-style-position: outside;
+	/*line-height:1.2;*/
+	/*width:85%;*/
+	/*float:left;*/ /*too universal? is making standard lists appear inline. moved to delcaration for #categoryNav ul li*/
+}
+#categoryNav ul li {
+	float: left;
+}
+#categoryNav .reveal-modal li a,
+#categoryNav .reveal-modal li .tip_trigger,
+#productMenuForm .reveal-modal li a,
+#productMenuForm .reveal-modal li .tip_trigger {
+	display:inline-block;
+	display:inline\9;
+}
+#categoryNav .reveal-modal ul,
+#productMenuForm .reveal-modal ul {
+	margin-top:-4px;
+	margin-top:-2px\9;
+	font-family:'omnes_ods_mediumregular', verdana, sans-serif;
+}
+#categoryNav .reveal-modal ul ul,
+#productMenuForm .reveal-modal ul ul {
+	font-family:'omnes_ods_regularregular', verdana, sans-serif;
+}
+#categoryNav .reveal-modal ul li ul li,
+#productMenuForm .reveal-modal ul li ul li {
+	/*border:1px solid red;*/
+	margin-top:-2px;
+	margin-top:-4px\9;
+}
+
+#categoryNav .reveal-modal ul li ul li a,
+#productMenuForm .reveal-modal ul li a ul li a {
+	/*border:1px solid green;*/
+}
+
+
+#categoryNav .reveal-modal .tip_trigger,
+#productMenuForm .reveal-modal .tip_trigger {
+	margin:0;
+}
+#categoryNav .reveal-modal .tip_trigger,
+#productMenuForm .reveal-modal .tip_trigger {
+	top:3px;
+	left:4px;
+	display:inline-block;
+}
+
+#categoryNav .reveal-modal span,
+#productMenuForm .reveal-modal span {
+	display:inline;
+	float:none;
+	margin:0;
+}
+
+#productMenuForm .tooltiptip img {/*tool tip modal popup*/
+	vertical-align:middle;
+	margin:-3px 3px 0 0;
+}
+
+#contentMain #searchForm li {
+	list-style-image:none;
+}
+
+#searchForm label {
+	font-size:13px;
+}
+
+body.results #contentMain{width:900px;}
+
+
+#footer{clear:both;}
+#footer p{float:left; font-size:12px; width:550px;}
+#footer ul{float:right; width:271px; margin:20px;}
+#footer li{float:right; padding:0 10px; list-style:none;}
+
+#actions{float:right; width:223px; margin:120px 0 0 0;}
+
+/*
+.box{width:158px; margin:22px 0 32px 0; padding:0 15px 0 17px; background:url(https://www.modahealth.com/ProviderSearch/images/action_bottom.gif) no-repeat 0px bottom; position:relative;}
+.box h2{width:158px; background:url(https://www.modahealth.com/ProviderSearch/images/action_top.gif) no-repeat 0px 0px; position:relative; top:-5px; left:-17px; padding:14px 15px 0 17px;}
+*/
+
+#contentMain .box{display:inline; float:left; margin:22px;}
+
+
+.box{ 
+	border:#b0006e 1px solid; 
+	border-radius: 5px;
+		 -moz-border-radius: 5px;
+		 -webkit-border-radius: 5px;
+		 -khtml-border-radius: 5px; 
+	margin:22px 0 22px 0 !important; 
+	padding:0 15px 0 15px; 
+	width:170px;
+}
+.box h2 {
+	width:158px; 
+	position:relative;
+	top:-5px;
+	left:-17px;
+}
+.box h2,
+.reveal-modal h2 {
+	font-size:16px;
+	font-family:omnes_ods_mediumregular, verdana, sans-serif;
+	line-height:1;
+	margin-top:0;
+	padding:14px 15px 0 17px;
+	color:#493B31;
+}
+.reveal-modal h2 {
+	padding:0;
+}
+.box p {
+	margin:0 !important;
+}
+.box p.smaller {
+	font-size:13px;
+	line-height:1.2;
+}
+.box h2.no_bottom_spacing {
+	line-height:12px;
+	margin-bottom:-10px;
+}
+.regular_italic {
+	font-family:'omnes_ods_regularitalic', verdana, sans-serif;
+	font-style:normal;
+}
+
+.box2,
+#searchForm {
+	background:#e0f1ed;
+	border-radius:5px;
+	padding:15px;
+	*overflow:hidden;
+}
+#searchForm {
+	padding-right:5px;
+}
+.box2 h2 {
+	font-family:omnes_ods_mediumregular, verdana, sans-serif;
+	line-height:1;
+	color:#493B31;
+}
+.box2 h2,
+.box2 p,
+.box2 .row {
+	margin:0 0 7px 0;
+	padding:0;
+}
+.box2 .row {
+	margin:10px 0 15px 10px;
+}
+.box2.search {
+	width:200px;
+	float:left;
+	margin:20px 30px 0 0;
+	text-align:center;
+}
+.box2.search .modaBtn {
+	clear:left;
+	margin:0;
+	*position:relative;
+	*left:15px;
+}
+.box2.search .searchGuest {
+	margin-top:15px;
+}
+
+.modaBtn {
+	background:#51447A;
+	color:#fff;
+	border:none;
+	padding:2px 10px;
+	border-radius:5px;
+	font-size:17px;
+	margin:10px 0 0 0;
+	position:relative;
+	left:-3px;
+}
+.modaBtn:hover {
+	cursor:pointer;
+	background:#650141;
+}
+.modaText,
+.modaTextArea,
+
+.ui-widget select,
+.ui-widget textarea,
+.ui-widget button  {
+	border-radius:5px;
+	/*height:25px;*/
+	/*line-height:25px;*/
+	height:19px;
+	line-height:19px;
+	border: 1px solid #b9b1a9;
+	padding:0 .25em;
+	font-family:omnes_ods_regularregular, verdana, sans-serif !important;
+	font-size:13px !important;
+	color:#000 !important;
+}
+.modaTextArea {
+	height:250px;
+	width:240px;
+}
+.search {
+	width:240px;
+}
+.zip {
+	width:85px;
+}
+
+.dentalRegion h2{color:#74bf2a; font-size:128%/*13.5px*/ !important;}
+.dentalRegion a{color:#3095b8 !important; border-style:dotted; border-width:0 0 1px 0;}
+
+/*
+#actions .box h2{color:#74bf2a;}
+*/
+#actions p{width:190px; margin:22px 0 32px 0;}
+
+.box ul{
+	list-style:none;
+	padding: 0 0 12px 0;
+	margin:0;
+	line-height:1.2;
+}
+
+
+.box p{padding: 0 0 12px 0; margin:0;}
+.box input.go{float:left; margin:0; padding:0;}
+
+.box div.inputText{
+	font-size:9px;
+	background:url(https://www.modahealth.com/ProviderSearch/images/actionInput_bg2.png) no-repeat top right;
+	height:20px;
+	border:none;
+	margin:0;
+	padding:0 5px 0 0;
+	width:165px;
+}
+
+.box input.inputText{
+	float:left;
+	background:url(https://www.modahealth.com/ProviderSearch/images/actionInput_bg.gif) no-repeat;
+	height:20px;/*21*/
+	border:none;
+	margin:0;
+	padding:1px 5px 0 5px;
+	width:127px;
+}
+.box input.withIcon {
+	width:103px;
+}
+
+.box div.inputText input.inputText{
+	width:158px;
+}
+
+
+.box label{clear:both;}
+#actions label{margin:0;}
+#contentMain label{
+	/*margin:0.8em 0 0.4em 0;*/
+	margin:0;
+}
+#contentMainHelp p.emphasis,
+p.emphasis {
+	/*
+	font-weight:bold;
+	font-style:italic;
+	*/
+	font-family:'omnes_ods_mediumitalic', verdana, sans-serif;
+}
+
+#findVisitorForm{top:0;}/*{height:55px;}*/
+#findEligForm{}/*{height:130px;}*/
+#findVisitorForm p,
+#findEligForm p{text-align:center;}
+
+/* adjustment of form elements with help icons*/
+#findEligForm div.inputText{/*width:122px;*/ float:left;}
+#findEligForm input.inputText{width:83px;}
+#findEligForm div.inputText input.inputText{width:112px;/*132*/}
+
+/*
+#searchForm select, #noLocationForm select{display:block; width:170px; float:left; margin: 0 .25em .5em 0; clear:left;}
+*/
+
+#searchForm input,
+#noLocationForm input{
+	margin: 0 .25em .5em 0;
+	clear:left;
+}
+#searchForm input,
+#searchForm .dk_theme_moda,
+#searchForm .dropdown {
+	margin-right:10px;
+}
+#searchForm  .dk_container .dk_toggle:active{
+	background-color:#C25F92;
+}
+#searchForm label, 
+#searchForm .label, 
+#noLocationForm label, 
+#noLocationForm .label{
+	clear:left;
+	font-size:13px;
+	font-family:'omnes_ods_mediumregular', verdana, sans-serif;
+	text-transform:none;
+	margin-top:10px;
+}
+#noLocationForm .dk_container li {
+	list-style-image:none !important;
+}
+
+#searchEligFormAction {
+	margin:0;
+}
+
+#searchForm .advanced,
+#noLocationForm .advanced{
+	display:none;
+}
+.row {
+	display:block;
+	width:100%;
+	float:left;
+}
+
+
+/*
+.categoryButton:link,.categoryButton:visited{
+	color:#ffffff !important;
+	font-size:14px;
+	text-align:center;
+	display:block;
+	float:left;
+	height:67px;
+	padding:12px 5px 0 5px;
+	margin:20px 20px 0 0;
+	width:78px;
+	background:url(https://www.modahealth.com/ProviderSearch/images/categories_btn_sprite.gif) no-repeat 0 0;
+	border-style:none !important;
+}
+.categoryButton:active{
+	background-position:-88px 0;
+	color:#ffffff;
+}
+.categoryButton:hover{
+	background-position:-88px 0;
+	color:#ffffff;
+}
+.categoryButton.on{
+	background-position:-88px 0;
+	color:#ffffff;
+}
+*/
+
+.categoryButton:link,
+.categoryButton:visited {
+	color:#ffffff;
+	font-size:18px;
+	font-family:'omnes_ods_mediumregular', verdana, sans-serif;
+	text-align:center;
+	display:block;
+	float:left;
+	padding:8px 12px;
+	margin:10px 15px 0 0;
+	width:82px;
+	border-radius:5px;
+	background:#51447A;
+	border-style:none !important;
+}
+.categoryButton:active,
+.categoryButton:hover,
+.categoryButton.on{
+	color:#ffe92c;
+	text-decoration:underline;
+}
+
+.minimalContent{width:400px; display:inline; float:left; margin:0 0 0 32px;}
+
+#navMain{width:279px; display:inline; float:left; margin:0 0 0 -52px; position: relative;}
+#navMain .box{margin:0;}
+#navMain p{
+	margin:1.2em;
+}
+
+.col1,
+.col2,
+.colSpan {
+	padding-top:5px;
+}
+
+.col1.no-top-pad, .col2.no-top-pad {
+	padding-top:0;
+} 
+.noLabel {
+	padding:5px 0;
+}
+input.noLabel {
+	padding:0 0.25em;
+	margin:5px 0 !important;
+}
+.col1,
+.col2 {
+	float:left;
+}
+.col1 {
+	margin-right:10px;
+}
+.colNetwork {
+	*min-height:67px;
+}
+#searchForm #dk_container_state,
+#noLocationForm #dk_container_stateDialog  {
+	margin-right:18px;
+}
+#navMain .col1,
+#navMain .col2,
+.colSpan {
+	float:none;
+	margin-right:0;
+	clear:left;
+}
+
+#navMain .search,
+#navMain .zip {
+	width:240px !important;
+}
+#searchForm .dk_toggle {
+	width:206px !important;
+}
+#searchForm #dk_container_distance .dk_toggle,
+#searchForm #dk_container_language .dk_toggle,
+#searchForm #dk_container_gender .dk_toggle,
+.ui-dialog .dk_toggle {
+	width:230px !important;
+}
+#searchForm #dk_container_state .dk_toggle {
+	width:60px !important;
+}
+/*Added style, dk init will add custom class once selection is made*/
+#searchForm .toggle_selected {
+	background-color:#C25F92;
+}
+#searchForm .toggle_selected span, .dropdown dt.selectedNetworks span.toggle_selected{
+	color:#ffffff !important;
+}
+#noLocationForm #submitLocation {
+	 clear:left;
+	 margin:20px 0 0 170px;
+	 margin-left:165\9;
+}
+#noLocationDiv{display:none;}
+#dentalRegionDialog{display:none;}
+#medicalRegionDialog{display:none;}
+#visionRegionDialog{display:none;}
+#pharmacyRegionDialog{display:none;}
+li#pharmacyRegionDialogMain3 {
+	font-weight: 1.1em;
+}
+li#pharmacyRegionDialogMain3 span.parenthetical {
+	font-size: 70%;
+	font-style: italic;
+}
+	
+
+#searchForm p{margin: .5em 0 0 0; clear:left;}
+
+/*
+#searchForm{
+	padding:24px 24px 16px 16px;
+	background-color:#ffffff;
+	border:solid 1px #cccccc;
+	border-radius:6px;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+}
+*/
+
+#contentMedicalCriteria .bottomGo,
+#contentDentalCriteria .bottomGo,
+#navMain .bottomGo {
+	top:30px;
+}
+#navMain #searchForm {
+	margin-bottom:20px;
+}
+
+#prover_bottom {
+	border-top:1px solid #B9B1A9;
+	background:#51447A;
+	height:25px;
+	line-height: 1.1
+}
+#prover_bottom label {
+	position:relative;
+	top:2px;
+	left:6px;
+	color:#fff;
+	display:inline-block;
+	text-transform:none;
+	font-size:13px;
+}
+#prover_bottom label:hover,
+#prover_bottom img:hover {
+	cursor:pointer;
+}
+#prover_bottom input {
+	position:relative;
+	top:4px;
+	margin-left:6px;
+	*top:2px;
+}
+#prover_bottom label,
+#prover_bottom input,
+#prover_bottom a {
+	*float:left;
+}
+#autocomplete_close {
+	border-left: 1px solid #fff;
+}
+
+/* Search Favorites and Recent */
+#favRecent {
+	clear: left;
+	*zoom:1;
+}
+#favRecent hr {
+	width: 230px;
+	text-align: left;
+}
+#favRecent h2 {
+	margin: 1em 0 0;
+	font-weight: bold;
+	font-size: 1em/1.6;
+	color: #585858;
+}
+#favRecent h2 a {
+	font-size: 70%;
+	/*color: #32ACD5;*/
+	border-style: dotted;
+    border-width: 0 0 1px;
+    color: #3095B8;
+}
+#favRecent h2 a:hover {
+	cursor: pointer;
+}
+#favRecent ol {
+	margin:5px 0 20px 16px;
+	*margin:0 0 0 16px;
+}
+#favRecent ol li {
+	margin:0;
+	padding:0;
+	*margin-left:6px;
+}
+#favRecent ol li a {
+	 float:none;
+}
+.userDataGroup {
+	margin-bottom:10px;
+	*zoom:1;
+}
+.userData h3,
+.userData a {
+	float:left;
+	margin:0;
+	padding:0;
+}
+.userData h3 {
+	width:135px;
+}
+.userData a.clear-but {
+	font-size:12px;
+	line-height:1.4;
+	font-family:'omnes_ods_mediumregular', verdana, sans-serif;
+	color:#C25F92;
+}
+.userData a.clear-but:visited {
+	color:#C25F92;
+}
+.userData a {
+	font-size:14px;
+}
+.userData h3,
+.userData ol {
+	clear:left;
+}
+
+
+#productMenuForm {
+	margin-bottom:90px;
+}
+
+table.location tbody tr{}
+.jqmWindow{display:none;}
+.resultsColumn{width:260px; float:left;}
+
+#resultsPerPageForm{display:inline; float:right; width:100px; margin:10px 40px 0 0;}
+#resultsPerPageForm p {margin:0 0 0 12px; font-size:80%; text-align:right;}
+
+#resultsPerPageForm a.resultsPerPage,
+#resultsPerPageForm span.resultsPerPage{
+	display:block;
+	height:24px;
+	width:20px;
+	float:right;
+	text-align:center;
+	line-height:1.8em;
+	margin:0 0 0 12px;
+	background:url(https://www.modahealth.com/ProviderSearch/images/results_icons2.gif) no-repeat 0 -40px;
+	border-width:0 !important;
+	color:#585858;
+	font-size:12px;
+}
+
+* > #resultsPerPageForm a.resultsPerPage,
+#resultsPerPageForm span.resultsPerPage{
+	margin:0 0 0 6px;
+	line-height:2.2em} /* overrides previous rule for non-IE */
+
+
+#resultsPerPageForm span.resultsPerPage{
+	background-position: -21px -40px;
+	color:#ffffff;
+}
+
+#sortResultsForm,
+#sortResultsForm p,
+#sortResultsForm span {
+	font-family:'omnes_ods_mediumregular', verdana, sans-serif;
+}
+#sortResultsForm{
+	display:inline;
+	height:29px;
+	width:310px;
+	float:right;
+	margin:15px 330px 0 0;
+	font-size:15px;
+}
+#sortResultsForm p{
+	display:inline;
+	float:left;
+	margin:5px 0 0 0;
+	padding:0;
+}
+
+#sortResultsForm a.tab,
+#sortResultsForm span.tab{
+	display:inline;
+	float:left;
+	height:30px;
+	width:118px;
+	text-align:center;
+	line-height:28px;
+	margin:0 0 0 10px;
+	background:url(https://www.modahealth.com/ProviderSearch/images/results_icons2.gif) no-repeat 0 -65px;
+	border-style:none;
+}
+
+#sortResultsForm span.tab{
+	background-position:0 -96px;
+	border-style:solid;
+	border-color:#ffffff;
+	border-width:0 0 1px 0;
+	z-index:10;
+	position:relative;
+}
+
+.pagination{
+	display:inline;
+	float:right;
+	width: 294px;
+	margin:-24px 0px 20px 12px;
+	font-size:11px;
+	position:relative;
+	left:-36px
+}
+
+.pagination .first,
+.pagination .prev,
+.pagination .next,
+.pagination .last{
+	display:block;
+	float:left;
+	height:15px;
+	width:15px;
+	text-indent:-9999px; 
+	verflow:hidden;
+	margin:0 2px;
+	background:url(https://www.modahealth.com/ProviderSearch/images/results_icons.gif) no-repeat 0 -60px;
+	border-style:none !important;
+	position:relative;
+	top:2px;
+	right:2px;
+}
+
+.pagination .first{background-position: 0px -108px;}
+.pagination .prev{background-position: -15px -108px;}
+.pagination .next{background-position: -30px -108px;}
+.pagination .last{background-position: -45px -108px;}
+.pagination .pageNum{display:block; float:left; border-style:solid !important; border-color:#585858 !important; border-width: 0 0 0 1px !important; padding:0 4px;}
+.pagination a.pageNum {font-family:'omnes_ods_mediumregular', verdana, sans-serif;}
+.pagination form{display:inline; float:left; width:auto;}
+.pagination .showingResults{display:inline; float:left; width:auto; margin: 0 10px 0 0;}
+
+#pageNavTop.pagination {
+	margin: -28px 0 0;
+	width:auto;
+}
+
+
+/* 17.MAP */
+.provMarkerLabel{
+overflow-x: visible !important;
+overflow-y: visible !important;
+}
+
+.provMarkerLabel {opacity: 1 !important}
+.gmnoprint {opacity: 1 !important}
+
+.provMarkerLabel p {
+	position:absolute;
+	top:-33px;
+	left:-10px;
+	width:20px;
+	color:#ffffff;
+	text-align:center;
+}
+
+.reveal-modal .provMarkerLabel p {
+	background-color:transparent;
+}
+
+#bubble {
+	line-height:1;
+	width:95%;
+}
+.gmapDistance {
+	line-height:25px;
+}
+
+#providers_map{
+    text-align: right;
+    width: 528px;
+    height: 400px;
+}
+
+
+#resultsContent{ position: relative; float:left; display:inline; clear:right; width:526px; /*598*/ padding: 12px 35px; background-color:#ffffff; border:solid 1px #cccccc; margin:0 0 0 34px; border-radius:6px; -moz-border-radius:6px; -webkit-border-radius:6px; /*behavior:url(https://www.modahealth.com/ProviderSearch/js/border-radius.htc);*/}
+.prvdrBox {float:left; width:494px; background-color:#ffffff; border:solid 1px #dddddd; border-radius:6px; -moz-border-radius:6px; -webkit-border-radius:6px; /*behavior:url(https://www.modahealth.com/ProviderSearch/js/border-radius.htc);*/ padding:8px 16px 0 16px; margin:0 0 16px 0;}
+.prvdrBox a{
+	font-family:'omnes_ods_mediumregular', verdana, sans-serif;
+}
+.prvdrBox .location,
+#details .location,
+#details2 .location{
+	/*min-height:6.5em;*/
+	min-height:5.5em;
+	float:right;
+	display:inline;
+	padding:5px 5px 0 10px;
+	margin:0.5em 0;
+	width:300px;
+	background-color:#f0edeb;
+	border:solid 1px #e9e9e9;
+	border-radius:6px;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	/*behavior:url(https://www.modahealth.com/ProviderSearch/js/border-radius.htc);*/
+}
+.prvdrBox .location {
+	min-height:0;	
+}
+.downloadPrint {
+	padding:15px 0 3px 0;
+	display:inline-block;
+}
+
+.prvdrBox .location.altRow,
+.prvdrBox .location,
+#details .location.altRow,
+#details2 .location.altRow{
+	float:left;
+	width:222px;
+}
+.prvdrBox .location{
+	float:right;
+}
+
+.prvdrBox td{vertical-align:top;}
+.prvdrBox p{margin-bottom:0.5em; clear:both;}
+
+.prvdrBox td p{
+	padding-left:0;
+}
+.prvdrBox td p,
+.location .tooltipIcon {
+	float:left;
+}
+.prvdrBox .location .tooltipIcon {
+	top:0;
+}
+
+.prvdrBox p.name{text-transform:uppercase; margin-left:0;}
+.prvdrBox p.label{float:left; width:80px;}
+.prvdrBox p.list,
+.prvdrBox ul.list{
+	margin-left:0;
+	padding-left:0;
+	float:left;
+	width:150px;
+	clear:none;
+}
+.prvdrBox ul.list li {
+	line-height:1;
+	list-style-image:none !important;
+	list-style-type: none;
+	margin-bottom:5px !important;
+	*width:100%;
+}
+.prvdrBox p.more a{padding-right:12px; background:url(https://www.modahealth.com/ProviderSearch/images/more_arrow.gif) no-repeat center right;}
+
+.prvdrBox .note{text-transform:none; font-family:'omnes_ods_regularitalic', verdana, sans-serif;}
+.prvdrBox .note2,
+.prvdrBox .tooltipIcon {
+	text-transform:none;
+	padding-left:10px;
+}
+.prvdrBox .tooltipIcon {
+	position:relative;
+	top:8px;
+}
+.prvdrBox .medicalHomeSubhead {
+	display:inline-block;
+}
+
+.medicalHomeIconLocation {
+	width:140px;
+}
+
+.prvdrBox .networks{
+	float:right;
+	clear:left;
+	padding:5px 5px 0 10px;
+	margin:0.5em 0;
+	width:230px;
+	*clear:right;
+}
+.prvdrBox .more{float:left; clear:left;padding:5px 5px 0 10px; margin:0.5em 0; width:222px;}
+.prvdrBox .more a{
+	padding-right:12px;
+	background:url(https://www.modahealth.com/ProviderSearch/images/bullet_arrow.gif) no-repeat;
+	background-position:right 5px;
+}
+
+.prvdrBox h3 {
+	display:inline;
+}
+
+#details *,
+#details2 * {
+	line-height:1.2;
+}
+#details td,
+#details2 td {
+	line-height:1.1;
+}
+#details table,
+#details2 table {
+	margin:1px 0 0 0;
+}
+table.border .border-p {
+	width:590px;
+}
+table.border,
+table.border th,
+table.border td {
+	border: 1px solid #2FB5B7;
+	
+	/*bug 28348
+	ie7 doesn't like this class applied to a table in a modal, table border shows outside the modal being triggered/visible
+	this modal is triggered from the "provider specialty" ? icon*/
+	*border:none;
+}
+table.border caption,
+table.border td.caption {
+	    font-family: 'omnes_ods_mediumregular';
+background-color: #2FB5B7;
+color: #FFE92C;
+text-align: left;
+padding: 15px;
+}
+table.border th {
+background-color: #ffffff;
+padding: 5px;
+font-weight:normal;
+}
+
+table.border td {
+   padding: 5px;
+}
+.sectionHelp {
+	position:relative;
+	top:4px;
+}
+
+#details h4,
+#details strong,
+#details2 h4,
+#details2 strong  {
+	font-family:'omnes_ods_mediumregular', verdana, sans-serif;
+	display:inline;
+}
+
+#details .location table td .marker,
+#details2 .location table td .marker {
+	margin-right:10px;
+}
+
+#details .note,
+#details2 .note{text-transform:none; font-style:italic;}
+#details .networks,
+#details2 .networks{float:right; clear:left; padding:5px 5px 0 10px; margin:0.5em 0; width:300px;}
+#details .more,
+#details2 .more{
+	float:left;
+	clear:left;
+	padding:5px 5px 0 0;
+	margin:0.5em 0;
+	width:300px;
+}
+
+#resultsContent a.marker,
+#details a.marker,
+#details2 a.marker{
+	display:block;
+	color:#fff !important;
+	font-size:12px;
+	font-weight:bold;
+	text-align:center;
+	line-height: 22px;
+	border-style:none;
+	width:24px;
+	height:35px;
+	background-image:url(https://www.modahealth.com/ProviderSearch/images/plummarker.png);
+	font-family:'omnes_ods_regularregular', verdana, sans-serif;
+}
+
+.bottomGo{display:block; height:27px; width:27px; margin:0 auto -14px auto !important; position:relative; left:-1px; clear:left;}
+#searchForm .bottomGo{margin-bottom:0 !important;}
+
+#details,
+#details2 {
+	width:700px !important;
+	height:530px !important;
+	overflow:auto;
+	*position:relative;
+}
+#details #pagewrap,
+#details #contentDecorator,
+#details2 #pagewrap,
+#details2 #contentDecorator {
+	width:auto;
+}
+#details #provider_map,
+#details2 #provider_map{clear:both; margin-bottom:15px;}
+#details .location,
+#details2 .location{float:left;}
+#details .providerName,
+#details2 .providerName {
+	font-size: 1.2em;
+	font-family:'omnes_ods_mediumregular', verdana, sans-serif;
+}
+#details2 h1.providerName {
+	font-size:22px;	
+}
+#details .providerName,
+#details2 .providerName {
+	margin-top:0;
+}
+
+#modalProviderDistance #noLocationForm {
+	height:285px\9;
+	*height:285px;
+}
+
+.smaller {
+	font-size:11px;
+}
+.medium {
+	font-size:12px;
+}
+.moreTopSpacing,
+#searchForm .moreTopSpacing {
+	margin-top:27px;
+}
+.moreBottomSpacing,
+.providerDetails.ui-dialog .ui-dialog-content .moreBottomSpacing {
+	margin-bottom:15px;
+}
+
+/*Changes related to new sub-menu items for AllotherStates/Dental option*/
+.dntRegDlg ul, .phrDlg ul{
+    list-style-type: none;
+}
+
+/*
+.allOthStSubMenu a {
+    text-decoration:none;
+    outline: none;
+    -moz-outline-style: none;
+    font-size: 8.8px;
+    color: #cbff78;
+}
+*/
+.allOthStSubMenu a {
+	font-size:13px;
+	margin-bottom:10px;
+}
+#dentalNatNavLink1 {
+	margin-bottom:10px;
+}
+.reveal-modal ul ul {
+	margin-left:15px;
+}
+.reveal-modal ul ul li {
+	margin-bottom:0 !important;
+	line-height:1 !important;
+}
+
+#searchForm .performSrchProv {
+	margin:10px 0 0 205px;
+}
+
+#navMain #searchForm .performSrchProv {
+	margin-left:87px;
+}
+/*search results dropkick truncation*/
+#navMain #searchForm #dk_container_speciality .dk_toggle {
+	width:207px !important;
+}
+#navMain #searchForm .dk_toggle,
+#noLocationForm .dk_toggle {
+	width:231px !important;
+}
+#navMain #searchForm .dropdown dt.selectedNetworks {
+	width:222px;
+}
+#navMain #searchForm h2 {
+	margin-top:0;
+	margin-bottom:15px;
+}
+
+#dntlRegAllOthSubMenu{
+    display: none;
+}
+
+.formFloat {
+	float:left;
+	width:195px;
+
+}
+.formFloat.wider {
+	width:330px;
+}
+
+.tip{
+	background-color:#ffffff;
+	border:#b0006e 1px solid;
+	border-radius: 5px 7px 5px 5px;
+		 -moz-border-radius: 5px 7px 5px 5px;
+		 -webkit-border-radius: 5px 7px 5px 5px;
+		 -khtml-border-radius: 5px 7px 5px 5px;
+	overflow:visible;
+	padding:25px;
+	display:none;
+	position:absolute;
+    z-index:2147483647;
+	 
+	/* 
+    color: #fff;
+    padding: 20px;
+    background:#ffffff;
+    border: 1px solid #f0f0f0;
+    border-bottom: 2px solid #ccc;
+    display:none;
+    position:absolute;
+    z-index:2147483647;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    */
+}
+.tip h3 {
+	margin:0;
+}
+
+.smallTip{
+    width: 450px;
+    min-height:auto !important;
+}
+.tooltip_close {
+	position: absolute;
+	right:10px;
+	top:9px;
+	border:none !important;
+}
+.tooltip_close span {
+	text-indent:-9999px;
+	display:inline-block;
+	background: url("https://www.modahealth.com/ProviderSearch/images/msg_icon_close.gif") no-repeat;
+    height: 16px;
+    width: 16px;
+}
+
+.bigTip{
+    width: 650px;
+}
+
+.xtraSmallTip{
+    width: 375px;
+}
+
+.tip h3{
+    /*font-size: 15px;*/
+    font-weight: bold;
+    color: #666666;
+}
+
+/*
+.tip p{
+    color: #666666;
+}
+*/
+
+.dialog{
+    display:none;
+}
+
+.dialog h3{
+    font-size: 13px;
+    font-weight: bold;
+    color: #666666;
+}
+
+.ui-dialog.noTitle .ui-dialog-titlebar {
+	display: none;
+}
+
+.paginationBottom{
+    margin-top: 20px;
+    width:auto;
+}
+
+.tip_trigger {
+	/*position:relative;*/
+}
+.tip_trigger img {
+	position:relative;
+	top:4px;
+}
+.tip.smallTip img.logo, .tip.bigTip img.logo {
+	display: inline-block;
+	padding-left: 20px;
+}
+
+.tip.smallTip img.logo:first-child, .tip.bigTip img.logo:first-child {
+	padding-left: 0; /*isn't working, but leaving anyway*/
+}
+
+.tip.smallTip p, .tip.smallTip img.logo, .tip.bigTip p, .tip.bigTip img.logo {
+	margin-bottom: 4px;
+}
+.tip img.logo {
+	margin:10px 0 !important;
+}
+.text_for_close {
+	/*width:97%;*/
+	/*font-size:12px !important;*/
+}
+
+.detailsDisclaimer{
+    margin:20px 20px 20px 0px; 
+}
+
+.detailsDisclaimer p{
+    font-size: 85%;
+    font-family:'omnes_ods_mediumregular', verdana, sans-serif;
+}
+#zip,
+#zipDialog {
+	text-transform:uppercase;
+}
+
+div.listofcontents_right ul.listofcontents_right li.listofcontents_right{
+    float: left;
+    list-style-type: none;
+    position: relative;
+}
+
+/* START - STYLES FOR NETWORKS DROP DOWN SEARCH COMPONENT */       
+.dropdown dd, .dropdown dt{ 
+    margin:0px;
+    padding:0px;
+}
+
+.dropdown dt.selectedNetworks{
+    color: #fff;
+    /*background:#ffffff url(https://www.modahealth.com/ProviderSearch/images/arrow_black.png) no-repeat scroll right center;*/
+    border: 1px solid #f0f0f0;
+    border-top: 1px solid #ccc;
+    cursor:pointer;
+    width: 222px;
+    
+    background-image: url('./drop_down_arrow.png'); /*MRO: https://www.modahealth.com/ProviderSearch/images/dk_arrow2.png');*/
+  	background-position: right center;
+  	background-repeat: no-repeat;
+  	background-size: 20px 20px;
+  	border:1px solid #b9b1a9;
+  	background-color:#fff;
+  	color:#51447A;
+}
+.dropdown dt.selectedNetworks span {
+	color:#51447A; !important;
+	position:relative;
+	top:-1px;
+}
+.dropdown dt.selectedNetworks:hover,
+.dropdown dt.selectedNetworks:hover span {
+	text-decoration: none;
+	background-color:#650141;/*MRO: #c25f92;*/
+	color:#fff !important;
+}
+
+.dropdown dd.allNetworksList {
+    padding:7px; 
+    background:red;/*MRO: #ffffff;*/
+    border: 1px solid #B9B1A9;
+    position:relative;
+    display:none;
+    width:208px;
+    overflow: auto;
+    z-index:2147483647;
+    height:350px;
+    border-radius:0 0 5px 5px;
+    clear:left;
+    float:none;
+    top:-25px;
+}
+
+.listofcontents_right,
+.dropdown,
+.dropdown .selectedNetworks {
+	height:19px;
+	float:left;
+	margin-bottom:23px;
+}
+.allNetworkSpan {
+	display:block;
+	height:19px;
+}
+.dropdown .tip_trigger {
+	position:relative;
+	top:-8px;
+}
+.dropdown {
+	margin-bottom:10px;
+}
+.dropdown .selectedNetworks,
+.dropdown dt.selectedNetworks span.selectedNetworksTxt {
+	height:37px;
+}
+.dropdown dt.selectedNetworks span.selectedNetworksTxt {    
+    display:block;
+    padding:0 0 0 5px;
+    white-space: nowrap;
+    /*width:180px;*/
+    width:198px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    color: #000;
+	height:38px;
+	*height:auto;
+	font-size:13px;
+}
+
+.dropdown dd.allNetworksList dl dd ul li{
+    list-style-type: none;
+    cursor:pointer;
+    margin-bottom:0 !important;
+    height:auto;
+    width:198px;
+}
+#searchForm .dropdown dd.allNetworksList dl dd ul li input,
+#searchForm .dropdown dd.allNetworksList dl dd ul li span {
+	/*float:left; ez-check floats left*/
+}
+#searchForm .dropdown dd.allNetworksList dl dd ul li input {
+	margin-right:5px;
+}
+#searchForm .dropdown dd.allNetworksList dl dd ul li span {
+	line-height:1.3em;
+	width:175px;
+}
+#searchForm .dropdown dd.allNetworksList dl dd ul li label {
+	*padding:0;
+	*clear:left;
+}
+#searchForm .dropdown dd.allNetworksList dl dd ul li label input {
+	*position:relative;
+	*top:2px;
+	*width:20px;
+	*float:left;
+}
+#searchForm .dropdown dd.allNetworksList dl dd ul li label span {
+	*width:170px;
+	*float:none;
+	*padding-left:13px;
+}
+
+.dropdown dd.allNetworksList dl dt span{
+    font-size:13px;
+    text-transform:uppercase;
+    padding: 10px;
+    clear:left;
+    display:block;
+}
+
+.dropdown dd ul.listCntrls {
+    margin: 0;
+    padding: 0;
+    float: left;
+    width: 197px;
+    list-style: none;
+    position: relative;
+    background: #51447A; 
+    margin-bottom: 1.5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+.dropdown dd ul.listCntrls li.listCntrls {
+    float: left;
+    margin: 0;
+    padding: 0;
+    margin-bottom:0 !important;
+}
+
+.dropdown dd ul.listCntrls li.brdRght {
+    border-right: 1px solid #ffffff;
+}
+
+.dropdown dd ul.listCntrls li.listCntrls a {
+    padding: 5px 18px;
+    display: block;
+    color: #ffffff !important;
+    text-decoration: none !important;
+}
+
+.dropdown dd.theQabout{
+    position:absolute;
+    left:230px;
+    top:6px;
+}
+
+#searchForm #acceptp {
+	padding:0 0 10px 0;
+	*padding-top:5px;
+	margin-bottom:0;
+}
+#acceptp span,
+#acceptp input {
+	float:left;
+}
+#acceptp span {
+	position:relative;
+	top:-3px;
+	*top:0px;
+}
+#acceptp span:hover {
+	cursor:pointer;
+}
+#navMain #acceptp span {
+	width:225px;
+	line-height:1;
+	top:-2px;
+}
+#more_search_options {
+	font-family:'omnes_ods_mediumregular', verdana, sans-serif;
+	padding:10px 0 15px 0;
+	*padding:0;
+	display:inline-block;
+}
+/* END - STYLES FOR NETWORKS DROP DOWN SEARCH COMPONENT */ 
+
+.allJustified {
+    text-align: justify;
+    font-size: 1em;
+}
+
+/* clear fix */
+.clearfix:after {
+	content: ".";
+	clear: both;
+	visibility: hidden;
+	height: 0;
+	display: block;
+}
+.clearfix {
+	zoom: 1;
+}
+
+.indentmore {
+	margin-left:25px;
+}
+.no-top-padding{
+	padding-top:0;
+}
+/**
+ * CSS File for ezMark jQuery Plugin
+ *
+ **/
+.ez-hide { opacity: 0; filter:alpha(opacity=0); }
+.ez-checkbox {
+	background: url('https://www.modahealth.com/ProviderSearch/images/sprite_checkbox.png');
+	background-position:0px -21px;
+	display:inline-block;
+	width:21px;
+	height:21px;
+	float:left;
+	margin:0 5px 2px 0;
+}
+
+.ez-checked { background-position: 0px 0px; }
+
+.ez-checkbox{ zoom: 1; *display:inline; _height:23px; }
+
+.modaText.watermark {
+	color:#A39C97 !important;
+	font-size:13px;
+	font-family:omnes_ods_mediumregular, verdana, sans-serif;
+}
+
+/**
+ * When network name is a single word and smaller in length, it wraps to the previous network name in the above <li> element
+ * Adding float:none to prevent wrapping with above network name and display the network name in a new line properly.
+ * See Bug #31378 for more details.
+ **/
+#contentMain .networks ul.list li {
+    float: none;
+}
+
+/**
+/*Med home providers, location details
+**/
+.prvdrBox .location > div {
+	float: left;
+	height: 100%;
+	display: inline-block;
+}
+.prvdrBox .location > div + div {
+	margin-left: 10px;
+}
+.prvdrBox .location .prvdrAddr {
+	width: 65%;
+}
+.prvdrBox .location.noMedHome .prvdrAddr {
+	width: 80%;
+}
+.prvdrBox .location.noMedHome .prvdrTooltip {
+	display: none;
+}
+.tooltipIcon.medicalHomeSubhead { /*customization for medical home icons using bg images*/
+	width: 32px;
+	height: 30px;
+	background-image: url(https://www.modahealth.com/ProviderSearch/images/medical_home_sprite.png);
+	padding: 0;
+}
+.medHome .tooltipIcon.medicalHomeSubhead {
+	background-position: -41px -30px;
+}
+.medHome1 .tooltipIcon.medicalHomeSubhead {
+	background-position: -4px 0;
+}
+.medHome2 .tooltipIcon.medicalHomeSubhead {
+	background-position: -41px 0;
+}
+.medHome3 .tooltipIcon.medicalHomeSubhead {
+	background-position: -4px -30px;
+}
+.tooltipContent,
+.tooltipContent * { /* first hide the tooltipcontent and its HTML */
+	display: none;
+}
+#tiptip_holder .tooltipContent {
+	display: block; /* then display the tooltip content block in the tooltip */
+}
+/* now condition the display of the content block's HTML, based on the medHome tier (for future use, but class medHomeAll will always display) */
+/* the body will have a class prefixed with msg- when hover/click activates the tooltip */
+.tooltipContent .medHomeAll,
+.msg-medHome .tooltipContent .medHomeDefault,
+.msg-medHome1 .tooltipContent .medHome1,
+.msg-medHome2 .tooltipContent .medHome2,
+.msg-medHome3 .tooltipContent .medHome3 {
+    display: block;
+}

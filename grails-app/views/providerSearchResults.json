@@ -1,0 +1,182 @@
+{
+  "alterRule": "NoFilter",
+  "geoCodeQuality": "RANGE_INTERPOLATED",
+  "originatingLatitude": 44.977,
+  "originatingLongitude": -93.265,
+  "status": "PROVIDERS_FOUND",
+  "providers": [
+    {
+      "businessName": "Hanks Hardware and Tooth Repair",
+      "education": ["Degree 1, Education Place 1"],
+      "firstName": "Alpha",
+      "genderCode": "M",
+      "lastName": "Male",
+      "locations": [
+        {
+          "addressOne": "123 Seseme Street",
+          "addressTwo": "",
+          "businessName": "Hanks Hardware and Tooth Repair",
+          "city": "Minneapolis",
+          "distance": 100,
+          "facilityID": "Location1",
+          "handicappedAccessible": true,
+          "latitude": 44.9778,
+          "longitude": -93.265,
+          "officeEmail": "location1@gmail.com",
+          "officeEmergencyMessage": "Not Sure What This Is",
+          "officeServcDisableAdlt": true,
+          "officeServcDisableChld": true,
+          "publicTransAvailable": true,
+          "stateCode": "MN",
+          "telephoneNumber": "(999)123-4567",
+          "urlText": "http://www.hanks-location1.com",
+          "zip": "55438"
+        },
+        {
+          "addressOne": "456 Other Street",
+          "addressTwo": "",
+          "businessName": "Hanks Hardware and Tooth Repair",
+          "city": "Minneapolis",
+          "distance": 200,
+          "facilityID": "Location2",
+          "handicappedAccessible": true,
+          "latitude": 44.97782,
+          "longitude": -93.26503,
+          "officeEmail": "location2@gmail.com",
+          "officeEmergencyMessage": "Not Sure What This Is",
+          "officeServcDisableAdlt": true,
+          "officeServcDisableChld": true,
+          "publicTransAvailable": true,
+          "stateCode": "MN",
+          "telephoneNumber": "(888)456-7890",
+          "urlText": "http://www.hanks-location2.com",
+          "zip": "55439"
+        }
+      ],
+      "middleInitial": "M",
+      "officeTimes": [
+        "EVE",
+        "WKD"
+      ],
+      "products": [
+        {
+          "productCode": "Default",
+          "productDesc": "Default",
+          "prvdAccptsPatsInd": "Default",
+          "soAccptsPatsInd": "Default"
+        }
+      ],
+      "providerEmail": "provider1@gmail.com",
+      "providerServcDisableAdlt": true,
+      "providerServcDisableChld": false,
+      "prvdrLanguages": [
+        "English",
+        "Spanish"
+      ],
+      "specialties": ["Speciality 1"],
+      "suffix": "DDS"
+    },
+    {
+      "businessName": "Yet Another Provider",
+      "education": ["Degree 1, Education Place 1"],
+      "firstName": "Me",
+      "genderCode": "M",
+      "lastName": "Myself",
+      "locations": [
+        {
+          "addressOne": "789 Whatever Street",
+          "addressTwo": "",
+          "businessName": "Yet Another Provider Location 1",
+          "city": "Minneapolis",
+          "distance": 100,
+          "facilityID": "Location1",
+          "handicappedAccessible": true,
+          "latitude": 45.029387,
+          "longitude": -93.362586,
+          "officeEmail": "provider2location1@gmail.com",
+          "officeEmergencyMessage": "Not Sure What This Is",
+          "officeServcDisableAdlt": true,
+          "officeServcDisableChld": true,
+          "publicTransAvailable": true,
+          "stateCode": "MN",
+          "telephoneNumber": "(999)888-7777",
+          "urlText": "http://www.another-location.com",
+          "zip": "55438"
+        }
+      ],
+      "middleInitial": "I",
+      "officeTimes": [
+        "EVE",
+        "WKD"
+      ],
+      "products": [
+        {
+          "productCode": "Default",
+          "productDesc": "Default",
+          "prvdAccptsPatsInd": "Default",
+          "soAccptsPatsInd": "Default"
+        }
+      ],
+      "providerEmail": "provider2@gmail.com",
+      "providerServcDisableAdlt": true,
+      "providerServcDisableChld": false,
+      "prvdrLanguages": [
+        "English",
+        "Spanish"
+      ],
+      "specialties": ["Speciality 1"],
+      "suffix": "DDS"
+    },
+    {
+      "businessName": "A Third Provider",
+      "education": ["Degree 1, Education Place 1"],
+      "firstName": "Alpha",
+      "genderCode": "M",
+      "lastName": "Male",
+      "locations": [
+        {
+          "addressOne": "567 Third Street",
+          "addressTwo": "",
+          "businessName": "A Third Provider",
+          "city": "Minneapolis",
+          "distance": 100,
+          "facilityID": "Location1",
+          "handicappedAccessible": true,
+          "latitude": 44.964144,
+          "longitude": -93.395276,
+          "officeEmail": "provider3location1@gmail.com",
+          "officeEmergencyMessage": "Not Sure What This Is",
+          "officeServcDisableAdlt": true,
+          "officeServcDisableChld": true,
+          "publicTransAvailable": true,
+          "stateCode": "MN",
+          "telephoneNumber": "(888)999-6666",
+          "urlText": "http://www.another-location.com",
+          "zip": "55438"
+        }
+      ],
+      "middleInitial": "M",
+      "officeTimes": [
+        "EVE",
+        "WKD"
+      ],
+      "products": [
+        {
+          "productCode": "Default",
+          "productDesc": "Default",
+          "prvdAccptsPatsInd": "Default",
+          "soAccptsPatsInd": "Default"
+        }
+      ],
+      "providerEmail": "provider1@gmail.com",
+      "providerServcDisableAdlt": true,
+      "providerServcDisableChld": false,
+      "prvdrLanguages": [
+        "English",
+        "Spanish"
+      ],
+      "specialties": ["Speciality 1"],
+      "suffix": "DDS"
+    }
+  ]
+}
